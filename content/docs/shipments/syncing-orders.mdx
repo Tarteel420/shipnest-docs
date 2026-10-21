@@ -1,0 +1,53 @@
+---
+title: Syncing orders
+description: How orders arrive from your webstores, and how to sync manually.
+---
+
+ShipNest fetches orders from your [active webstores](/docs/configuration/webstores). The sync status line above the order table shows when that last happened — for example *Last synced 1 min ago (shipnestadv, WooCommerce)*.
+
+## How new orders arrive
+
+ShipNest picks up orders in two ways:
+
+- **Pushed by the marketplace** — marketplaces that support notifications tell ShipNest about new or changed orders as they happen. Walmart now sends order notifications to ShipNest, and Shopify order events are received the same way.
+- **Regular polling** — ShipNest also checks each store on a schedule. This catches anything a notification missed, so orders still arrive if a notification fails.
+
+Each organization's stores are checked on their own schedule, and import jobs are spread out so that large stores don't hold up others.
+
+## Large order volumes and marketplace limits
+
+Marketplaces limit how fast ShipNest can request orders. When a store has a lot of new orders at once:
+
+- **Amazon** — large syncs (for example thousands of orders in a short time) now pause when Amazon's rate limit is reached and resume from where they stopped, instead of failing or starting again from page 1.
+- **Newegg** — when Newegg asks ShipNest to slow down, the wait is now capped, so the sync can't stay paused indefinitely. Fallback deadlines also no longer land on weekends.
+
+You don't need to do anything — the sync completes on its own. If the light stays red for a long time, use **Retry sync** below or contact [Support](/docs/support).
+
+## Sync status light
+
+The dot next to the message is a traffic light:
+
+- **Green** — synced recently.
+- **Yellow** — getting older.
+- **Red** — hasn't synced for a while.
+
+## Sync now
+
+- Click the **circular arrow** (**Retry sync**) to sync again.
+- Click the **▾** next to it (**Choose marketplaces to sync**) to sync **All marketplaces** or one store. Each store shows how long ago it last synced.
+
+## Sync alert settings
+
+Click the **gear** at the end of the sync line to set when the light changes colour:
+
+| Setting | Meaning |
+| --- | --- |
+| **Show green for the first** | Minutes after a sync during which the light stays green. |
+| **Turn red after** | Minutes after which the light turns red. Yellow shows in between. |
+| **Flash when red** | Makes the red light flash so it's hard to miss. |
+
+Click **Done** to save.
+
+<Callout type="warn">
+  A webstore only syncs while it is **Active** on [Webstore settings](/docs/configuration/webstores/managing-webstores).
+</Callout>

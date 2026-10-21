@@ -1,0 +1,52 @@
+---
+title: Packages Historical Autofill
+description: Fill package dimensions and weight from each SKU's saved packing data.
+---
+
+> *Fills each package's dimensions and weight from the SKU's saved packing template. Runs only for single-item, quantity-1 orders, and never overwrites a package that already has dimensions. Orders whose SKU has no saved template yet are skipped.*
+
+<Screenshot src="/images/automation/ar-historical-autofill.png" alt="Packages Historical Autofill rule" />
+
+## How it behaves
+
+- Only **single-item, quantity-1** orders.
+- Never overwrites a package that already has dimensions.
+- Skips orders whose SKU has no saved packing data yet.
+- Only **one** rule of this type is allowed. Once it exists the template button is greyed out — edit the existing rule from the Rules list instead.
+
+## Create the rule
+
+<Steps>
+<Step>
+
+### Open the template
+
+Click **Packages Historical Autofill** on the Automation Rules page.
+
+</Step>
+<Step>
+
+### Name it
+
+Enter a **Rule name**, optional **Description**, and **Test mode** if needed.
+
+</Step>
+<Step>
+
+### Filter (optional)
+
+*Limit the rule to specific marketplaces or order tags. Leave empty to apply to every eligible order.*
+
+</Step>
+<Step>
+
+### Review and save
+
+The **Review and save** chips restate the built-in behaviour (*Single-item, quantity-1 orders only*, *Fills package from SKU packing template*). Click **Create rule** (**Update rule** when editing).
+
+</Step>
+</Steps>
+
+<Callout>
+  Packing data comes from previously shipped packages. Make sure **Enable Historical Package Data Prefilling** is on in [Shipping & rates](/docs/account-settings/shipping-and-rates#enable-historical-package-data-prefilling).
+</Callout>

@@ -1,0 +1,318 @@
+{
+ "/images/account-settings/acct-address-validation.png": [
+  1078,
+  593
+ ],
+ "/images/account-settings/acct-keyboard-shortcuts.png": [
+  1078,
+  593
+ ],
+ "/images/account-settings/acct-picking.png": [
+  1078,
+  593
+ ],
+ "/images/account-settings/acct-shipping-rates-1.png": [
+  1078,
+  593
+ ],
+ "/images/account-settings/acct-shipping-rates-2.png": [
+  1078,
+  593
+ ],
+ "/images/automation/ar-action-options.png": [
+  1080,
+  593
+ ],
+ "/images/automation/ar-add-tag-action.png": [
+  1080,
+  593
+ ],
+ "/images/automation/ar-classification-branches.png": [
+  1080,
+  593
+ ],
+ "/images/automation/ar-dsr-action.png": [
+  1080,
+  593
+ ],
+ "/images/automation/ar-fallback-rates.png": [
+  1048,
+  575
+ ],
+ "/images/automation/ar-fallback-top.png": [
+  1080,
+  593
+ ],
+ "/images/automation/ar-fetch-rates.png": [
+  1078,
+  593
+ ],
+ "/images/automation/ar-historical-autofill.png": [
+  1078,
+  593
+ ],
+ "/images/automation/ar-make-package-advanced.png": [
+  1080,
+  593
+ ],
+ "/images/automation/ar-make-package-basic.png": [
+  1080,
+  593
+ ],
+ "/images/automation/ar-newrule-actions.png": [
+  1048,
+  575
+ ],
+ "/images/automation/ar-order-validation-panel.png": [
+  1080,
+  593
+ ],
+ "/images/automation/ar-ready-to-save.png": [
+  1080,
+  593
+ ],
+ "/images/automation/ar-rule-saved.png": [
+  1080,
+  593
+ ],
+ "/images/automation/ar-save-filter-modal.png": [
+  1080,
+  593
+ ],
+ "/images/automation/ar-select-field.png": [
+  1080,
+  593
+ ],
+ "/images/automation/ar-select-shipping-branch.png": [
+  1080,
+  593
+ ],
+ "/images/automation/automation-rules-main.png": [
+  1080,
+  593
+ ],
+ "/images/configuration/carrier-settings-list.png": [
+  1078,
+  593
+ ],
+ "/images/configuration/carrier-shipping-addresses.png": [
+  1080,
+  593
+ ],
+ "/images/configuration/carrier-ups-form.png": [
+  1080,
+  593
+ ],
+ "/images/configuration/carrier-usps-form.png": [
+  1080,
+  593
+ ],
+ "/images/configuration/custom-package-create.png": [
+  1080,
+  593
+ ],
+ "/images/configuration/custom-packages-list.png": [
+  1080,
+  593
+ ],
+ "/images/configuration/printing-template.png": [
+  1080,
+  593
+ ],
+ "/images/configuration/tags-empty.png": [
+  1080,
+  593
+ ],
+ "/images/configuration/tags-list.png": [
+  1080,
+  593
+ ],
+ "/images/configuration/tags-new-dialog.png": [
+  1080,
+  593
+ ],
+ "/images/configuration/webstore-amazon.png": [
+  1080,
+  593
+ ],
+ "/images/configuration/webstore-carrier-accounts.png": [
+  1080,
+  593
+ ],
+ "/images/configuration/webstore-list.png": [
+  1078,
+  593
+ ],
+ "/images/configuration/webstore-new-drawer.png": [
+  1568,
+  653
+ ],
+ "/images/configuration/webstore-shopify.png": [
+  1080,
+  593
+ ],
+ "/images/configuration/webstore-temu.png": [
+  735,
+  450
+ ],
+ "/images/configuration/webstore-woocommerce.png": [
+  1080,
+  593
+ ],
+ "/images/getting-started/account-drawer.png": [
+  1078,
+  593
+ ],
+ "/images/printing/printing-agent-printers.png": [
+  1078,
+  593
+ ],
+ "/images/printing/printing-configure-agent.png": [
+  1078,
+  593
+ ],
+ "/images/printing/printing-configure-printer.png": [
+  1078,
+  593
+ ],
+ "/images/printing/printing-job-details.png": [
+  1078,
+  593
+ ],
+ "/images/printing/printing-jobs.png": [
+  1078,
+  593
+ ],
+ "/images/printing/printing-printers.png": [
+  1078,
+  593
+ ],
+ "/images/reports/reports-build-report.png": [
+  1078,
+  593
+ ],
+ "/images/reports/reports-business.png": [
+  1078,
+  593
+ ],
+ "/images/reports/reports-custom-empty.png": [
+  1078,
+  593
+ ],
+ "/images/reports/reports-custom-saved.png": [
+  1078,
+  593
+ ],
+ "/images/reports/reports-overview.png": [
+  1078,
+  593
+ ],
+ "/images/reports/reports-product.png": [
+  1078,
+  593
+ ],
+ "/images/scan-labels/scan-labels-empty.png": [
+  1078,
+  593
+ ],
+ "/images/scan-labels/scan-labels-notfound.png": [
+  1078,
+  593
+ ],
+ "/images/shipments/cancel-order-confirm.png": [
+  675,
+  580
+ ],
+ "/images/shipments/header-label-downloads-button.png": [
+  489,
+  79
+ ],
+ "/images/shipments/label-batch-details.png": [
+  540,
+  652
+ ],
+ "/images/shipments/label-downloads-panel.png": [
+  1440,
+  652
+ ],
+ "/images/shipments/new-shipment-add-item.png": [
+  1015,
+  591
+ ],
+ "/images/shipments/new-shipment-edit-items.png": [
+  1015,
+  591
+ ],
+ "/images/shipments/new-shipment-form.png": [
+  1015,
+  591
+ ],
+ "/images/shipments/order-add-package-popover.png": [
+  866,
+  158
+ ],
+ "/images/shipments/order-details-address-packages.png": [
+  1046,
+  473
+ ],
+ "/images/shipments/order-details-rates.png": [
+  1046,
+  400
+ ],
+ "/images/shipments/order-details-top.png": [
+  1078,
+  593
+ ],
+ "/images/shipments/order-shipping-log.png": [
+  1046,
+  388
+ ],
+ "/images/shipments/return-shipment-form.png": [
+  1015,
+  591
+ ],
+ "/images/shipments/ship-all-tab.png": [
+  1078,
+  593
+ ],
+ "/images/shipments/ship-customize-tabs.png": [
+  1078,
+  593
+ ],
+ "/images/shipments/ship-filters-panel.png": [
+  1078,
+  593
+ ],
+ "/images/shipments/ship-manage-filter-sets.png": [
+  1078,
+  593
+ ],
+ "/images/shipments/ship-marketplaces.png": [
+  1078,
+  593
+ ],
+ "/images/shipments/ship-needs-attention.png": [
+  1078,
+  593
+ ],
+ "/images/shipments/ship-shipped-row-menu.png": [
+  855,
+  300
+ ],
+ "/images/shipments/ship-shipped-tab.png": [
+  1078,
+  593
+ ],
+ "/images/shipments/shipments-ready-to-ship.png": [
+  1568,
+  653
+ ],
+ "/images/shipments/slip-preview-dialog.png": [
+  1078,
+  593
+ ],
+ "/images/shipments/void-label-confirm.png": [
+  563,
+  580
+ ]
+}

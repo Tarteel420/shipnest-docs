@@ -1,0 +1,58 @@
+---
+title: DSR rule (signature requirement)
+description: Set the delivery signature requirement automatically.
+---
+
+> *Sets what an order needs before it can ship.*
+
+The **DSR rule** sets the **signature confirmation** on matching orders.
+
+## Create a DSR rule
+
+<Steps>
+<Step>
+
+### Open and name
+
+Click **DSR rule**, enter a **Rule name**, optional **Description**, and **Test mode** if needed.
+
+</Step>
+<Step>
+
+### Add conditions
+
+Under **Filter Conditions** add the conditions. The DSR rule offers four fields: **Market Name**, **Tags**, **Order Total** and **Requested Shipping Method**.
+
+</Step>
+<Step>
+
+### Choose the signature
+
+Click **Add Action** → **Set Signature Confirmation**, then choose the **Signature confirmation**: *Default Confirmation*, *No Signature*, *Direct Signature* or *Adult Signature*. Click **Add Action**.
+
+<Screenshot src="/images/automation/ar-dsr-action.png" alt="Set Signature Confirmation action" />
+
+</Step>
+<Step>
+
+### Add branches (optional)
+
+Click **Add else-if branch** for other scenarios, and enable **Else (otherwise)** for a default.
+
+</Step>
+<Step>
+
+### Save
+
+Click **Save Rule**.
+
+</Step>
+</Steps>
+
+## Example
+
+**Adult signature on high-value orders** — Filter: **Order Total** `>` 1000 → **Set Signature Confirmation**: *Adult Signature*.
+
+<Callout>
+  For eBay orders there is also a built-in setting: **Require signature on high-value eBay orders** in [Shipping & rates](/docs/account-settings/shipping-and-rates).
+</Callout>

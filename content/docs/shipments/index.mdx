@@ -1,0 +1,60 @@
+---
+title: Shipments Overview
+description: Where every order is found, shipped and tracked.
+---
+
+The **Shipments** page is ShipNest's home screen and main working area. Orders from all your [connected webstores](/docs/configuration/webstores) appear here in one table, grouped into status tabs.
+
+<Screenshot src="/images/shipments/shipments-ready-to-ship.png" alt="Shipments page showing the Ready to Ship tab" caption="The Shipments page, showing the Ready to Ship tab." />
+
+## What's on the page
+
+| Area | What it does |
+| --- | --- |
+| **Marketplaces** | Choose which webstores' orders are shown. See [Search and filters](/docs/shipments/search-and-filters#choose-marketplaces). |
+| **Search shipments** | Find an order quickly. |
+| **Filters** and **filter-set** menu | Narrow the list and save combinations you use often. See [Filter sets](/docs/shipments/filter-sets). |
+| **Labels (PDF)** ▾ | Download labels for selected orders, or export orders to CSV or Excel. See [Slips, labels and exports](/docs/shipments/slips-labels-and-exports). |
+| **Slip Preview** | Generate packing slips for the orders in the current view. |
+| **New shipment** ▾ | Create an order manually, or start a stand-alone return. See [New shipment](/docs/shipments/new-shipment). |
+| **Ship all** ▾ | Ship many orders at once. See [Bulk actions](/docs/shipments/bulk-actions). |
+| **Status tabs** | Ready to Ship, Needs Attention, Partially Shipped, Shipped, To Process, Cancelled, Returned and All. See [Dashboard tabs](/docs/shipments/dashboard-tabs). |
+| **Sync status** | When orders were last synced, and a button to sync again. See [Syncing orders](/docs/shipments/syncing-orders). |
+| **Order table** | One row per order, with actions on the right. |
+
+## Reading an order row
+
+| Column | Shows |
+| --- | --- |
+| **Order** | Order date, a red **late** badge if the ship-by date has passed (hover to see the ship-by date), the store icon, the order number and an **Automation** chip if an automation rule changed the order. |
+| **BTO Sync** | BTO sync status (only shown when BTO Sync is turned on). See [BTO sync](/docs/shipments/bto-sync). |
+| **Ship to** | Customer name, city and ZIP. A green ★ means a **returning customer**. |
+| **Ship from** | The ship-from address that will be used. |
+| **Items** | The first item and **+ n more items**. |
+| **Value** | Order value. |
+| **Dimensions** | Weight, L × W × H and the package type. |
+| **Courier service** | The carrier and service selected for the order. |
+| **Shipping** | The shipping cost of the selected rate. |
+| **Paid** | What the customer paid for shipping. |
+
+Click the order **date / number** area to open the [order details](/docs/shipments/order-details) page.
+
+## Row actions
+
+| Tab | Actions on each row |
+| --- | --- |
+| Ready to Ship / Needs Attention | **Ship**, **Clone** ▾ (Clone with items), **Slip** ▾ (Download), **Cancel** |
+| Shipped / To Process | **Clone** ▾, **Return**, **⋮** (PDF, Void) |
+
+<Callout>
+  On **Needs Attention** rows, **Ship** and **Clone** are disabled until the problem is fixed. Hover the red ⚠ under the date to see why.
+</Callout>
+
+## Related pages
+
+<Cards>
+  <Card title="Ship an order" href="/docs/shipments/shipping-an-order" />
+  <Card title="Dashboard tabs" href="/docs/shipments/dashboard-tabs" />
+  <Card title="Search and filters" href="/docs/shipments/search-and-filters" />
+  <Card title="Bulk actions" href="/docs/shipments/bulk-actions" />
+</Cards>

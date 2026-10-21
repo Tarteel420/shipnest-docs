@@ -1,0 +1,72 @@
+---
+title: Set up the PrintWise Agent
+description: Install the agent on a Windows PC so ShipNest can print to its printers.
+---
+
+The **PrintWise Agent** is a lightweight desktop application that connects the printers on your computer to ShipNest. Once registered, it detects your printers automatically, runs in the background and starts when you sign in to Windows. It supports **Windows** and communicates securely over HTTPS/WSS.
+
+Go to **Printing → Configure Agent**.
+
+<Screenshot src="/images/printing/printing-configure-agent.png" alt="Configure Agent page" />
+
+## Install and register
+
+<Steps>
+<Step>
+
+### Download the agent
+
+Under **Step 1: Download Agent**, click **Download** on the **Windows** card. The latest version number is shown above it.
+
+</Step>
+<Step>
+
+### Run the installer
+
+Open your **Downloads** folder and double-click **printwise-agent-windows.exe**. No admin rights are needed — it installs into your user profile.
+
+If Windows SmartScreen shows *Windows protected your PC*, click **More info → Run anyway**.
+
+</Step>
+<Step>
+
+### Sign in
+
+A printer icon appears in the system tray and a sign-in window opens. Click **Sign in with 99-IAM** and sign in in the browser window that opens. The agent registers itself and starts finding your printers.
+
+</Step>
+<Step>
+
+### Check it's online
+
+Back on **Configure Agent**, your computer appears under **Your Agents** with its status (**Online** / **Offline**), last-seen time and how many printers are enabled.
+
+</Step>
+<Step>
+
+### Choose printers
+
+Expand the agent (click its row) and use the switches to choose which printers are available for printing. Pick **PDF** or **ZPL** for each printer.
+
+<Screenshot src="/images/printing/printing-agent-printers.png" alt="Agent printers list" caption="Toggle printers on or off to control which are available for printing." />
+
+</Step>
+<Step>
+
+### Set default printers
+
+Go to [Printers](/docs/printing/printers) and set your default PDF and ZPL printers.
+
+</Step>
+</Steps>
+
+## Manage the agent
+
+- **Resync** — refresh the agent's printer list.
+- **Revoke Token** — disconnect the agent from your account.
+- From the Windows tray icon (right-click): **Status…**, **Settings…**, **Open logs folder**, **Restart**, **Sign out**, **Quit**.
+- **Uninstall:** Windows Settings → Apps → Installed apps → **PrintWise Agent** → **Uninstall**.
+
+<Callout>
+  The **PrintWise Server URL** shown on the page is the address the agent connects to. Your firewall must allow outbound HTTPS/WSS to it. See [Troubleshooting](/docs/printing/troubleshooting).
+</Callout>

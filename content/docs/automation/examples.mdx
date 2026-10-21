@@ -1,0 +1,48 @@
+---
+title: Examples
+description: Common automation rules you can copy.
+---
+
+Use these as starting points. Create them in **Test mode** first and check the results before switching them live.
+
+## Tag P.O. Box orders for review
+
+- **Template:** [Order validation](/docs/automation/order-validation)
+- **IF:** PO Box = **Yes**
+- **THEN:** Add tag *PO Box review*
+
+## Group orders by value
+
+- **Template:** [Order classification](/docs/automation/order-classification)
+- **IF:** Order Total `>` 1000 → Add tag *High value*
+- **ELSE IF:** Order Total `>` 250 → Add tag *Medium value*
+- **ELSE (otherwise):** Add tag *Standard*
+
+## Require an adult signature on expensive orders
+
+- **Template:** [DSR rule](/docs/automation/dsr-rule)
+- **IF:** Order Total `>` 1000
+- **THEN:** Set Signature Confirmation → *Adult Signature*
+
+## Always ship one store with a specific account
+
+- **Template:** [Select shipping service](/docs/automation/select-shipping-service)
+- **Branch IF:** Market Name = *your store*
+- **THEN SHIP VIA:** your FedEx account + *FedEx Ground®*
+
+## Cheapest rate, but never a slow service
+
+1. [Fetch Rates](/docs/automation/fetch-rates) with **Select cheapest & on-time service** on.
+2. [Fallback Selection](/docs/automation/fallback-selection) filtered on *courier service is Ground Economy*, with that service under **Never auto-select these services**, **Re-fetch rates** on, and both behaviour boxes ticked.
+
+## Use one box for a known product
+
+- **Template:** [Make your package](/docs/automation/make-your-package) (Basic)
+- **IF (item group):** SKU = *ABC-123* AND Quantity = 1
+- **PACKAGE:** Custom package *Small box*
+
+## Hold orders that need manual checking
+
+- **Template:** [+ New Rule](/docs/automation/custom-rules)
+- **IF:** Notes is not null
+- **THEN:** Hold order (a rule with the **Release hold** action clears the hold)

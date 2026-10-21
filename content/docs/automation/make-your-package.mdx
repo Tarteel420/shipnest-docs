@@ -1,0 +1,78 @@
+---
+title: Make your package
+description: Apply a package — or a package per quantity — to matching orders.
+---
+
+> *Set up a custom package size to use on matching orders.*
+
+This template has two modes: **Basic** and **Advanced**.
+
+## Basic mode
+
+*Match orders (optionally per item group — all conditions in a group match the same item), then apply a single package and an optional tag. Use Advanced for quantity-based packaging and auto-fill.*
+
+<Screenshot src="/images/automation/ar-make-package-basic.png" alt="Make your package — Basic" />
+
+<Steps>
+<Step>
+
+### Open and name
+
+Click **Make your package**, enter a **Rule name** and optional **Description**, keep **Basic** selected, and set **Test mode** if needed.
+
+</Step>
+<Step>
+
+### Filter (optional)
+
+Add filters as usual. Use **Add item group** for conditions that must all match **the same item** — for example item title *and* quantity.
+
+</Step>
+<Step>
+
+### Choose the package
+
+Under **Package**, use the **Custom package** tab to pick a [saved package](/docs/configuration/custom-packages), or the **Dimensions** tab to enter the size directly.
+
+</Step>
+<Step>
+
+### Add a tag (optional)
+
+Pick a tag under **Add tag (optional)**.
+
+</Step>
+<Step>
+
+### More scenarios
+
+Click **Add else-if branch** for another filter + package combination, checked after the first.
+
+</Step>
+<Step>
+
+### Save
+
+Click **Create rule**.
+
+</Step>
+</Steps>
+
+<Callout type="warn">
+  If **Custom package** shows *No options*, create a package first under [Custom packages](/docs/configuration/custom-packages).
+</Callout>
+
+## Advanced mode
+
+*Match item patterns and package them by quantity. Add Else-if branches for different patterns and an optional Otherwise for everything else. Shipping selection and ship action live in their own rules.*
+
+<Screenshot src="/images/automation/ar-make-package-advanced.png" alt="Make your package — Advanced" />
+
+| Section | What to set |
+| --- | --- |
+| **Filter** | Market, item and BTO kit fields for this branch. *Unshipped / paid / not-canceled conditions are added automatically when the rule runs.* |
+| **Packages — Quantity package matrix** | *Define the package dimensions and weight for each exact quantity.* Turn on **Filter by quantity**, click **Add quantity**, and for each row enter the **Qty**, a **Custom package / flat-rate box** (or Length, Width, Height) and **Weight**. |
+| **Auto-fill packages / shipments** | *Optionally split a larger matched quantity across multiple packages.* When on: **Create extra packages in secondary shipment** (off = extras stay in the primary shipment), **Auto-fill templates** (all quantity rows can be used, or **Restrict templates**), and **Add combination** — *explicit combinations override fallback auto-fill.* |
+| **Otherwise — Package unmatched orders** | *Optional. When enabled, orders matching none of the branches above are packaged with this configuration. Leave off to do nothing for unmatched orders.* |
+
+Check the **Review and save** summary (for example *1 branch*) and click **Create rule**.

@@ -1,0 +1,60 @@
+---
+title: Packages and items
+description: Enter dimensions and weight, choose a package type and assign items to packages.
+---
+
+Each shipment has one or more packages. You set them up in the **Packages** section of [Order details](/docs/shipments/order-details).
+
+## Package fields
+
+| Field | Notes |
+| --- | --- |
+| **L × W × H** | Dimensions in inches. ShipNest no longer sends package sides under 1 inch to FedEx. |
+| **Weight** \* | In lbs. Required — rates can't be fetched with a weight of 0. |
+| **Declared value** | Optional value to declare to the carrier. |
+| **Save for future use** | Saves this package's details so ShipNest can reuse them (see [Historical package data](/docs/account-settings/shipping-and-rates#enable-historical-package-data-prefilling)). |
+| **Package type** | **Customized packages** (Box/Other and your [custom packages](/docs/configuration/custom-packages)) or **Flat rate packages** (carrier boxes). Picking a saved package fills in its dimensions. |
+| **Reference** / **Invoice number** | Optional references printed on the label. |
+| **More details** | **PO**, **Shipment integrity** and **Department number**. |
+| **Signature confirmation** | Default Confirmation, No Signature, Direct Signature or Adult Signature. |
+| **Ship date** | The date you'll hand the package to the carrier. |
+
+## Add more packages
+
+<Steps>
+<Step>
+
+### Click + Package
+
+In the **Packages** section, click **+ Package**.
+
+</Step>
+<Step>
+
+### Choose how many
+
+Enter the **Number of packages**, then click **Add new** (empty packages) or **Duplicate** (copies of the current package).
+
+<Screenshot src="/images/shipments/order-add-package-popover.png" alt="Add package popover" />
+
+</Step>
+<Step>
+
+### Fill in each package
+
+Enter dimensions and weight for each package, then [assign items](#assign-items-to-packages).
+
+</Step>
+</Steps>
+
+Each package gets its own label and tracking number when the order is shipped.
+
+## Assign items to packages
+
+The **Package Items** panel shows how many items are in the package, for example *2 items (25 qty)*. Each item shows how much of it is assigned (for example **24 / 24 Assigned**).
+
+Click **Assign Items** to choose which items — and how many of each — go into this package.
+
+<Callout>
+  Packages can also be filled in automatically: [Packages Historical Autofill](/docs/automation/packages-historical-autofill) reuses saved package data, and [Make your package](/docs/automation/make-your-package) applies a package by rule. You can turn historical prefilling on or off in [Shipping & rates](/docs/account-settings/shipping-and-rates#enable-historical-package-data-prefilling).
+</Callout>

@@ -1,0 +1,75 @@
+---
+title: Carriers Overview
+description: Connect UPS, FedEx and USPS accounts for rates, labels and tracking.
+---
+
+ShipNest uses your own carrier accounts to fetch live rates, buy labels and track packages. Go to **Configurations → Carrier settings**.
+
+<Screenshot src="/images/configuration/carrier-settings-list.png" alt="Carrier Settings list" caption="Your carrier accounts." />
+
+| Column | Meaning |
+| --- | --- |
+| **Category** | The carrier (logo). |
+| **Account no** | The account number or name. |
+| **Address** | The default ship-from address, or *No default address*. |
+| **Default** | The default account. |
+| **Label format** | PDF or ZPL for shipping labels. |
+| **Return format** | PDF or ZPL for return labels. |
+| **Actions** | **⋮ → Edit** or **Delete**. |
+
+<Callout>
+  Accounts that come with a marketplace (for example Shopify Shipping or Amazon shipping) can also appear in this list.
+</Callout>
+
+## Add a carrier account
+
+<Steps>
+<Step>
+
+### Open New carrier
+
+Click **+ New carrier**. The **Carrier account service** panel opens with **UPS**, **FedEx** and **USPS**.
+
+</Step>
+<Step>
+
+### Choose the carrier
+
+Click the carrier's logo and fill in its form:
+
+- [UPS](/docs/configuration/carriers/ups)
+- [FedEx](/docs/configuration/carriers/fedex)
+- [USPS](/docs/configuration/carriers/usps)
+
+</Step>
+<Step>
+
+### Authenticate
+
+Click **Authenticate**. ShipNest checks the credentials with the carrier and adds the account.
+
+</Step>
+<Step>
+
+### Turn it on for your webstores
+
+[Switch the account on](/docs/configuration/webstores/managing-webstores#choose-carrier-accounts-for-a-webstore) for each webstore that should use it.
+
+</Step>
+</Steps>
+
+## Address fields (all carriers)
+
+Every carrier form includes a **Shipping address** — your ship-from address:
+
+| Field | Required |
+| --- | --- |
+| Company | Yes |
+| First name | Yes |
+| Last name | No |
+| Address 1 | Yes |
+| Address 2 | No |
+| Country | US |
+| City, State, Zip code | Yes |
+| Email | Yes |
+| Phone number | Yes |

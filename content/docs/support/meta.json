@@ -1,0 +1,5 @@
+{
+  "title": "Support",
+  "root": true,
+  "pages": ["index", "faq", "glossary"]
+}

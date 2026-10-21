@@ -1,0 +1,47 @@
+---
+title: Actions reference
+description: Every action an automation rule can run.
+---
+
+## Actions by template
+
+| Template | Actions |
+| --- | --- |
+| Order validation | Add tag, Pause automations |
+| Order classification | Add tag, Pause automations |
+| DSR rule | Set Signature Confirmation |
+| Make your package | Apply a package (custom package or dimensions), optional tag |
+| Select shipping service | Shipping account and/or courier service, optional tag |
+| Fetch Rates | Fetch rates, optionally select cheapest & on-time service |
+| Fallback Selection | Different package, carrier, re-fetch rates, excluded services |
+| Packages Historical Autofill | Fill package from SKU packing data |
+| + New Rule | All actions below |
+
+## All actions (+ New Rule)
+
+| Action | What it does |
+| --- | --- |
+| **Set Delivery Date** | Sets the order's delivery date. |
+| **Set Package Weight / Length / Width / Height** | Sets the package weight or a dimension. |
+| **Set Custom Package** | Applies a [custom package](/docs/configuration/custom-packages). |
+| **Set Shipment Delivery Date** | Sets the shipment's delivery date. |
+| **Set Signature Confirmation** | Default Confirmation, No Signature, Direct Signature or Adult Signature. |
+| **Set Shipping Account** | Chooses the carrier account. |
+| **Set Courier Service** | Chooses the service. |
+| **Set Ship From Address** | Chooses the ship-from address. |
+| **Fetch cheapest and on time rates** | Fetches rates and selects the cheapest on-time service. |
+| **Auto fill new packages** | Fills multiple packages based on maximum quantity. |
+| **Auto fill new shipments** | Fills multiple shipments based on maximum quantity. |
+| **Make your package and ship it** | Guided workflow to package matched items, apply shipping setup, and ship. |
+| **Add tag** | Attaches a tag; it appears as a chip on the order list. |
+| **Remove tag** | Removes a tag from matched orders. |
+| **Select shipping service** | Chooses a shipping account and courier service for matched shipments. |
+| **Hold order** | Puts matched orders on hold so labels cannot be generated until released. |
+| **Release hold** | Clears the hold on matched orders. |
+| **Pause automations** | Stops all further rules from running on the order, now and on future runs. |
+| **Packages Historical Autofill** | Fills dimensions from the SKU's saved packing data for single-item, quantity-1 orders. Add-once. |
+| **Fetch Rates** | Fetches carrier rates and optionally selects the cheapest on-time service. Add-once. |
+
+<Callout type="warn" title="Actions that ship">
+  **Make your package and ship it** ships orders. Try it in **Test mode** first — in Test mode no labels are generated.
+</Callout>

@@ -1,0 +1,48 @@
+---
+title: The order lifecycle
+description: How an order moves through ShipNest, from your store to delivery.
+---
+
+Every order you see in ShipNest follows the same basic path. Knowing it makes the [Shipments tabs](/docs/shipments/dashboard-tabs) easy to read.
+
+<Steps>
+<Step>
+
+### The order arrives
+
+ShipNest syncs new orders from your [connected webstores](/docs/configuration/webstores). You can also create an order yourself with [New shipment](/docs/shipments/new-shipment). Active [automation rules](/docs/automation) run on new matching orders — for example to set the package or pick a carrier service.
+
+</Step>
+<Step>
+
+### Ready to Ship — or Needs Attention
+
+Orders with everything needed to ship appear in **Ready to Ship**. Orders with a problem (for example an invalid address, a P.O. Box, a missing weight, or a Shopify fulfillment hold) move to **Needs Attention** until you fix them. See [Fixing Needs Attention orders](/docs/shipments/needs-attention).
+
+</Step>
+<Step>
+
+### You ship it
+
+You review the order, choose a rate and create the label. ShipNest sends the details to the carrier and gets back a label and tracking number. See [Ship an order](/docs/shipments/shipping-an-order).
+
+</Step>
+<Step>
+
+### Shipped and To Process
+
+The order moves to **Shipped**. It also stays in **To Process** until its label is scanned on the [Scan Labels](/docs/scan-labels) page or the carrier confirms the first scan. Orders with several packages show as **Partially Shipped** until every package is shipped.
+
+</Step>
+<Step>
+
+### After shipping
+
+From a shipped order you can reprint or void the label, or create a return label. Cancelled orders appear in **Cancelled**, and returns in **Returned**.
+
+</Step>
+</Steps>
+
+<Callout title="Skip the To Process step">
+  If your team doesn't scan labels, an admin can switch on **Skip To Process step** so printed orders go straight to Shipped. See [Shipping & rates settings](/docs/account-settings/shipping-and-rates#skip-to-process-step).
+</Callout>

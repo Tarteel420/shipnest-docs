@@ -1,0 +1,59 @@
+---
+title: Fields and operators
+description: Every field you can filter on, and the operators available.
+---
+
+The fields you can use depend on the template. Click the field box in a filter row to open **Select Field**, then search or browse by category.
+
+## Fields by template
+
+| Template | Fields available |
+| --- | --- |
+| Order validation, Order classification | 31 — Market, Ship to address, Order, Order item |
+| DSR rule | 4 — Market Name, Tags, Order Total, Requested Shipping Method |
+| + New Rule | 101 — all categories below |
+
+## Field categories
+
+<Accordions>
+<Accordion title="Market (1)">
+Market Name
+</Accordion>
+<Accordion title="Order (20)">
+Order Number, Order Date, Ship By Date, Delivery Date, Paid, Tags, Fulfillment Status, Shipped, Canceled, Subtotal, Tax, Shipping Paid by Customer, Order Total, Requested Shipping Method, Total Item Quantity, Total Item Weight, Comments, Notes, Reference 1, On Hold
+</Accordion>
+<Accordion title="Order item (8)">
+Item Title, Listing Number, Line Item ID, Unit Price, Quantity, Item Weight, SKU, All items belong to same SKU
+</Accordion>
+<Accordion title="Ship to address (14 in + New Rule; 2 in Order validation)">
+First Name, Last Name, Company Name, Address Line 1, Address Line 2, City, State, Postal Code, Country, Phone, Email, Address Type, PO Box, Repeat Customer. *(Order validation / classification offer PO Box and Repeat Customer.)*
+</Accordion>
+<Accordion title="Package (15) — + New Rule">
+Package Weight, Weight Unit, Package Length, Package Width, Package Height, Custom Package, Declared Value, Reference Number, Shipping Integrity, Purchase Order, Invoice, Department Number, Package Should Print, All packages must have zero dimensions, All packages must have zero weight
+</Accordion>
+<Accordion title="Shipment (17) — + New Rule">
+Shipment Shipped, Shipment Cost, Service Type, Shipment Delivery Date, Ship Date, Label Printed, Pickup Type, Payment By, Signature Confirmation, Internal Status, Is Draft, Is Return, Master Tracking Number, Shipping Account, Courier Service, Ship From Address, Courier Service Name
+</Accordion>
+<Accordion title="Shipping account (8) — + New Rule">
+Account Number, Carrier Category, Account Pickup Type, Account Payment By, Is Default Account, Account Active, Label Format, Return Label Format
+</Accordion>
+<Accordion title="BTO kit (order item) (18) — + New Rule">
+BTO Kit SKU, Model, Brand, Form Factor, RAM (GB), Operating System, Drive 1 Size (GB), Drive 1 Type, Kit Component Category, Is Accessory, Kit Component Name, Kit Component Qty, BTO Image URL, Accessory Name, Accessory Quantity, Part Name, Part Quantity, Kit Component Filter
+</Accordion>
+</Accordions>
+
+## Operators
+
+| Field type | Operators |
+| --- | --- |
+| **Numbers and dates** (Order Total, Order Date…) | `=`, `!=`, `<`, `>`, `<=`, `>=`, is null, is not null, between, not between. Dates use MM/DD/YYYY. |
+| **Text** (Item Title, SKU…) | `=`, `!=`, contains, begins with, ends with, does not contain, is null, is not null, in, not in |
+| **Tags** | has any of, has all of, has none of |
+| **Yes / No** (PO Box, Repeat Customer…) | No operator — click **Yes** or **No**. |
+
+## AND, OR and groups
+
+- **AND** — every condition must match.
+- **OR** — any one condition can match.
+- **Add Group** — creates a nested set of conditions with its own AND/OR, for example *Market = Shopify AND (Order Total > 500 OR Total Item Quantity > 10)*.
+- **Add item group** (Make your package) — all conditions in the group must match **the same item**.

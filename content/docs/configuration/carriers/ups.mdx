@@ -1,0 +1,57 @@
+---
+title: Connect UPS
+description: Add a UPS account to ShipNest.
+---
+
+## What you need
+
+- Your UPS **account number**.
+- API credentials from the UPS developer portal: **Client ID** and **Client secret**.
+- The ship-from address for this account.
+
+## Add the account
+
+<Steps>
+<Step>
+
+### Open the UPS form
+
+Go to **Configurations → Carrier settings**, click **+ New carrier**, then click **UPS**.
+
+<Screenshot src="/images/configuration/carrier-ups-form.png" alt="UPS account configuration form" />
+
+</Step>
+<Step>
+
+### Enter the account details
+
+| Field | Enter |
+| --- | --- |
+| **Account number** \* | Your UPS account number. |
+| **Client id** \* | Your UPS API client ID. |
+| **Client secret** | Your UPS API client secret. |
+| **Default Package Type** | The package type to use by default with this account — a carrier package, **Box/Other**, or one of your [custom packages](/docs/configuration/custom-packages). |
+
+</Step>
+<Step>
+
+### Enter the shipping address
+
+Fill in the ship-from address (Company, First name, Address 1, City, State, Zip code, Email and Phone number are required).
+
+</Step>
+<Step>
+
+### Authenticate
+
+Click **Authenticate**. The account appears on **Carrier settings**.
+
+</Step>
+<Step>
+
+### Turn it on for your webstores
+
+[Switch the account on](/docs/configuration/webstores/managing-webstores#choose-carrier-accounts-for-a-webstore) for each webstore that should use it.
+
+</Step>
+</Steps>

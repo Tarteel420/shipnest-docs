@@ -1,0 +1,61 @@
+---
+title: Order validation
+description: Check each order against your rules and flag or pause the ones that don't pass.
+---
+
+> *Checks each order against rules you set.*
+
+Use **Order validation** to catch orders that need a person to look at them — for example P.O. Box addresses, very high order values, or a specific SKU — and tag them or stop automation on them.
+
+## Create an Order validation rule
+
+<Steps>
+<Step>
+
+### Open the template
+
+Go to **Configurations → Automation rules** and click **Order validation**.
+
+</Step>
+<Step>
+
+### Name it
+
+Enter a **Rule name**, an optional **Description**, and turn on **Test mode** if you want to try it first.
+
+</Step>
+<Step>
+
+### Add conditions
+
+Under **Filter Conditions**, choose **AND** / **OR**, click **Add Filter** and pick a field, operator and value. Use **Add Group** for nested conditions. Order validation offers 31 fields from **Market**, **Ship to address**, **Order** and **Order item**. See [Fields and operators](/docs/automation/fields-and-operators).
+
+</Step>
+<Step>
+
+### Add an action
+
+Click **Add Action** and choose:
+
+- **Add tag** — *Attach a tag to matched orders. The tag appears as a chip on the order list.* Pick the **Tag**, then click **Add Action**.
+- **Pause automations** — *Stop all further automation rules from running on this order, now and on future runs.* No extra settings.
+
+<Screenshot src="/images/automation/ar-add-tag-action.png" alt="Add tag action with tag selected" />
+
+</Step>
+<Step>
+
+### Save
+
+Click **Save Rule**.
+
+</Step>
+</Steps>
+
+<Callout>
+  Order validation uses one filter and one action list — it has no else-if branches. For branching logic use [Order classification](/docs/automation/order-classification) or a [custom rule](/docs/automation/custom-rules).
+</Callout>
+
+## Example
+
+**Tag P.O. Box orders for review** — Filter: **PO Box** = **Yes** → Action: **Add tag** *PO Box review*.

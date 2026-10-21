@@ -1,0 +1,55 @@
+---
+title: Connect USPS
+description: Add a USPS account to ShipNest.
+---
+
+USPS needs the same details as UPS and FedEx, plus three USPS-specific IDs.
+
+## What you need
+
+- Your USPS **account number**, **Client ID** and **Client secret**.
+- Your **Mailer ID**, **Manifest Mailer ID** and **Payment account number**.
+- The ship-from address.
+
+## Add the account
+
+<Steps>
+<Step>
+
+### Open the USPS form
+
+Go to **Configurations → Carrier settings**, click **+ New carrier**, then click **USPS**.
+
+<Screenshot src="/images/configuration/carrier-usps-form.png" alt="USPS account configuration form" />
+
+</Step>
+<Step>
+
+### Enter the account details
+
+| Field | Enter |
+| --- | --- |
+| **Account number** \* | Your USPS account number. |
+| **Client id** \* | Your USPS API client ID. |
+| **Client secret** | Your USPS API client secret. |
+| **Mailer ID** \* | Your USPS Mailer ID. |
+| **Manifest mailer id** \* | Your USPS manifest Mailer ID. |
+| **Payment account number** \* | The USPS account labels are paid from. |
+| **Default Package Type** | The package type to use by default with this account. |
+
+</Step>
+<Step>
+
+### Enter the shipping address
+
+Fill in the ship-from address (Company, First name, Address 1, City, State, Zip code, Email and Phone number are required).
+
+</Step>
+<Step>
+
+### Authenticate
+
+Click **Authenticate**, then [switch the account on](/docs/configuration/webstores/managing-webstores#choose-carrier-accounts-for-a-webstore) for your webstores.
+
+</Step>
+</Steps>

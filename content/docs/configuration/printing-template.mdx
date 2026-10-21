@@ -1,0 +1,38 @@
+---
+title: Printing template
+description: Choose how labels are printed and which label sizes to use.
+---
+
+**Configurations → Printing template** controls how new labels are produced for your whole organization.
+
+<Screenshot src="/images/configuration/printing-template.png" alt="Printing Template page" />
+
+## Organization printing settings
+
+| Setting | What it does |
+| --- | --- |
+| **Use PrintWise Cloud Printing** | *When enabled, labels are sent to PrintWise for cloud printing. When disabled, the desktop application is used.* See [Printing](/docs/printing). |
+| **Disable actions if agent offline** | *When enabled, all printing actions (create shipment, return, ship, reprint, PDF, etc.) will be disabled if the agent is offline.* Prevents buying labels that can't be printed. |
+
+## ZPL settings
+
+**ZPL Stock Type** \* — the thermal label size:
+
+- 4 × 6 Label
+- 4 × 6.75 Label (also with leading or trailing document tab)
+- 4 × 8 Label
+- 4 × 8.5 Label with trailing document tab
+- 4 × 9 Label (also with leading or trailing document tab)
+- 4 × 10.5 Label with trailing document tab
+
+## PDF settings
+
+| Setting | Options |
+| --- | --- |
+| **Predefined Printing Template** | The PDF label layout — for example Default or BTO Template. Your organization's custom templates are also listed. |
+| **PDF Stock Type** \* | The page size for PDF labels (for example 4 × 6 Page). |
+| **Only Download PDF** | When on, PDF labels are downloaded instead of being sent to a printer. |
+
+<Callout>
+  Whether a carrier account produces PDF or ZPL is set per account on [Carrier settings](/docs/configuration/carriers/managing-carriers#label-formats).
+</Callout>

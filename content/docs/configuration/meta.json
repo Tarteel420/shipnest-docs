@@ -1,0 +1,15 @@
+{
+  "title": "Configuration",
+  "root": true,
+  "pages": [
+    "index",
+    "---Sales Channels---",
+    "webstores",
+    "---Carriers---",
+    "carriers",
+    "---Labels & Packages---",
+    "printing-template",
+    "custom-packages",
+    "tags"
+  ]
+}

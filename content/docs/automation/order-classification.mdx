@@ -1,0 +1,59 @@
+---
+title: Order classification
+description: Sort orders into groups with tags, using branches.
+---
+
+> *Sorts orders into groups based on rules you set.*
+
+Use **Order classification** to tag orders into groups — for example by marketplace, value or product — so your team can filter and work through them.
+
+## Create an Order classification rule
+
+<Steps>
+<Step>
+
+### Open the template
+
+Go to **Configurations → Automation rules** and click **Order classification**.
+
+</Step>
+<Step>
+
+### Name it
+
+Enter a **Rule name**, optional **Description**, and set **Test mode** if needed.
+
+</Step>
+<Step>
+
+### Add the first condition and action
+
+Build the **Filter Conditions** (same fields as [Order validation](/docs/automation/order-validation)), then under **Then do** click **Add Action** → **Add tag** (or **Pause automations**).
+
+</Step>
+<Step>
+
+### Add more groups
+
+Click **Add else-if branch** for each additional group — for example *IF Order Total > 1000 → tag "High value"*, *ELSE IF Total Item Quantity > 10 → tag "Bulk"*.
+
+</Step>
+<Step>
+
+### Set a fallback (optional)
+
+Under **Else (otherwise)**, switch on **Enable** to tag orders that matched none of the branches — *Runs for eligible orders that matched none of the branches above.*
+
+<Screenshot src="/images/automation/ar-classification-branches.png" alt="Order classification with else-if and otherwise" />
+
+</Step>
+<Step>
+
+### Save
+
+Click **Save Rule**.
+
+</Step>
+</Steps>
+
+Then filter the Shipments page by **Tags** to work through each group. See [Search and filters](/docs/shipments/search-and-filters).

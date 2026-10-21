@@ -1,0 +1,59 @@
+---
+title: Shipped orders (reprint and void)
+description: Reprint a label or void it after shipping.
+---
+
+Shipped orders appear in the **Shipped** tab (and in **To Process** until scanned).
+
+<Screenshot src="/images/shipments/ship-shipped-tab.png" alt="Shipped tab" caption="Shipped rows show the tracking number, tracking status and ship date." />
+
+## Row actions
+
+| Action | What it does |
+| --- | --- |
+| **Clone** ▾ | Copy the order. See [Cloning orders](/docs/shipments/cloning-orders). |
+| **Return** | Create a return label. See [Returns](/docs/shipments/returns). |
+| **⋮ → PDF** | Reprint / download the shipping label. |
+| **⋮ → Void** | Void the shipping label. |
+
+<Screenshot src="/images/shipments/ship-shipped-row-menu.png" alt="Row menu with PDF and Void" />
+
+## Reprint a label
+
+Click **⋮** on the row and choose **PDF**. If you use PrintWise, you can also follow failed print jobs in [Print Jobs](/docs/printing/print-jobs).
+
+## Void a label
+
+<Steps>
+<Step>
+
+### Click Void
+
+Click **⋮** on the row and choose **Void**.
+
+</Step>
+<Step>
+
+### Check the shipment
+
+ShipNest asks **Void this label?** and shows the shipment: the store, order number, **Ship to** customer, **Value**, **Tracking** number, **Label cost**, **Courier** and service, and the **Items**.
+
+<Screenshot src="/images/shipments/void-label-confirm.png" alt="Void this label? confirmation" caption="Compare the tracking number and courier before you void." />
+
+</Step>
+<Step>
+
+### Confirm
+
+Click **Void label** to void it, or **Keep label** (or **×**) to go back without changing anything.
+
+</Step>
+</Steps>
+
+<Callout type="warn">
+  Voiding only cancels the existing label. It does **not** create a replacement label — ship the order again if it still needs to go out.
+</Callout>
+
+## Tracking
+
+The **Tracking** column shows the tracking number, the current **Status** and the **Shipped on** date. Use the **Tracking status** filter to find, for example, all orders still *In Transit*. See [Search and filters](/docs/shipments/search-and-filters).

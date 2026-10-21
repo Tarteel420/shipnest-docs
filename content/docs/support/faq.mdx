@@ -1,0 +1,52 @@
+---
+title: FAQ
+description: Quick answers to common questions.
+---
+
+<Accordions>
+<Accordion title="Why is my order in Needs Attention?">
+Hover the red ⚠ under the order date to see the reason, then fix it on the order page. See [Fixing Needs Attention orders](/docs/shipments/needs-attention).
+</Accordion>
+<Accordion title="Why is Update and ship greyed out?">
+A required field is missing — usually the customer's name, address, ZIP or the package weight. Fields with a problem are outlined in red. See [Ship an order](/docs/shipments/shipping-an-order).
+</Accordion>
+<Accordion title="Why don't I see any rates?">
+Rates need a package weight greater than 0, a valid address, and an active carrier account for the order's webstore. See [Rates and services](/docs/shipments/rates-and-services) and [Managing webstores](/docs/configuration/webstores/managing-webstores#choose-carrier-accounts-for-a-webstore).
+</Accordion>
+<Accordion title="New orders aren't appearing">
+Check the webstore is **Active** and look at the sync status above the order table. Click the refresh icon to sync again. See [Syncing orders](/docs/shipments/syncing-orders).
+</Accordion>
+<Accordion title="Why is an order still in To Process after shipping?">
+To Process holds shipped orders until their label is scanned or the carrier confirms pickup. Scan it on [Scan Labels](/docs/scan-labels), or switch on [Skip To Process step](/docs/account-settings/shipping-and-rates#skip-to-process-step).
+</Accordion>
+<Accordion title="What does the green star next to a customer mean?">
+The customer is a **returning customer**. It is not a priority flag.
+</Accordion>
+<Accordion title="I voided a label — will ShipNest create a new one?">
+No. Voiding only cancels the existing label. Ship the order again if it still needs to go out. See [Shipped orders](/docs/shipments/shipped-orders).
+</Accordion>
+<Accordion title="Why is an automation template greyed out?">
+Packages Historical Autofill and Fetch Rates allow only one rule each. Edit the existing rule instead. See [How rules work](/docs/automation/how-rules-work#one-per-account-templates).
+</Accordion>
+<Accordion title="My rule can't find my tag / package / shipping account">
+Rules can only use items that already exist. Create the [tag](/docs/configuration/tags), [custom package](/docs/configuration/custom-packages) or [carrier account](/docs/configuration/carriers) first.
+</Accordion>
+<Accordion title="Labels aren't printing">
+See [Printing troubleshooting](/docs/printing/troubleshooting).
+</Accordion>
+<Accordion title="A page says I don't have permission">
+Your role doesn't include that page. Contact your organization admin. See [User roles](/docs/getting-started/user-roles).
+</Accordion>
+<Accordion title="My label download failed or didn't open — do I have to ship again?">
+No. Open **Label downloads** (the download arrow in the header) and click **Download** on the batch. Batches are kept for 7 days. See [Label downloads](/docs/shipments/label-downloads).
+</Accordion>
+<Accordion title="Why did Ship all with Shopify skip some orders?">
+Only Shopify orders can be shipped with Shopify. Other orders show a message saying they aren't Shopify orders — ship them with **Ship all** instead. See [Bulk actions](/docs/shipments/bulk-actions#ship-all-with-shopify).
+</Accordion>
+<Accordion title="How will I know about planned downtime?">
+A banner appears at the top of ShipNest before planned updates, with the time in your own time zone. See [Downtime notices](/docs/getting-started/downtime-notices).
+</Accordion>
+<Accordion title="Can other companies see our orders?">
+No. Each organization can only see and change its own data. See [Your data and privacy](/docs/getting-started/data-and-privacy).
+</Accordion>
+</Accordions>

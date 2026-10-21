@@ -1,0 +1,51 @@
+---
+title: How rules work
+description: When rules run, in what order, and what Test mode does.
+---
+
+## The IF → THEN idea
+
+Every rule has two parts:
+
+- **IF** (Filter conditions) — which orders the rule applies to, for example *Market Name = my Shopify store* **AND** *Order Total > 500*.
+- **THEN** (Then do) — what happens to matching orders, for example *Add tag "High value"*.
+
+Some templates also support **Else-if** branches and an **Else (otherwise)** fallback. See [Branches](/docs/automation/building-a-rule#add-else-if-branches-and-an-otherwise).
+
+## When rules run
+
+- Rules run on **new matching orders**.
+- Several templates only run on orders that are **unshipped, paid and not cancelled** — these conditions are added automatically.
+- [Select shipping service](/docs/automation/select-shipping-service) and [Fetch Rates](/docs/automation/fetch-rates) only run when every package has a **weight greater than 0**.
+
+## Execution order
+
+Rules run **top to bottom** within their category. Drag rows on the Rules list to change the order — rules can only be reordered within their own category. See [Managing rules](/docs/automation/managing-rules#change-the-run-order).
+
+[Fallback Selection](/docs/automation/fallback-selection) is designed to run **last**, after [Fetch Rates](/docs/automation/fetch-rates).
+
+## Rule status
+
+| Status | Meaning |
+| --- | --- |
+| **paused** | The rule is switched off and doesn't run. |
+| **testing** | The rule runs in Test mode (see below). |
+| Enabled (toggle on, no Test mode) | The rule runs for real. |
+
+## Test mode
+
+Turn on **Test mode** in a rule's details to try it safely.
+
+> *Shipping labels will not be generated in Test mode. Testing status only writes simulation logs.*
+
+Rules saved with Test mode on show the **testing** status. When you're happy with the results, edit the rule, turn Test mode off and save.
+
+## One-per-account templates
+
+**Packages Historical Autofill** and **Fetch Rates** allow only **one** rule each. Once one exists, the template button is greyed out with the message *A … rule already exists. Only one is allowed.* Edit the existing rule instead.
+
+## Which orders were changed?
+
+Orders changed by a rule show an **Automation** chip in the order list (hover: *Affected by an automation rule*). The order's [Shipping log](/docs/shipments/shipping-log) shows exactly what each rule did.
+
+A **Pause automations** action stops all further rules from running on that order — now and on future runs.

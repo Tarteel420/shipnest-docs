@@ -1,0 +1,37 @@
+---
+title: Shipping log
+description: See everything that happened to an order, and who did it.
+---
+
+Every change to an order is recorded in its shipping log — whether it was made by a person, an automation rule or the marketplace.
+
+## Open the log
+
+Open the order's [Order details](/docs/shipments/order-details) page and click the **Order shipping log** tab.
+
+<Screenshot src="/images/shipments/order-shipping-log.png" alt="Order shipping log" caption="Entries are grouped by day, newest first." />
+
+## Read and filter the log
+
+| Control | Use |
+| --- | --- |
+| **Search log** | Search the descriptions. |
+| **All sources** | Show only one source — for example a user, an automation rule (*Automation-Rule-…*), *Auto Package Select* or *Shopify Marketplace*. |
+| **All actions** | Show only one action type — for example *Assign Item*, *Automation Action*, *Save Order* or *Update Package*. |
+| **All shipments / Primary shipment / Order** | Limit to one shipment or to order-level changes. |
+| **Table / Timeline** | Switch between a table and a timeline view. |
+
+Each entry shows the **Time**, **Shipment**, **Source**, **Action** and a **Description** (for example *Weight 1: Set package weight to 1*).
+
+### What the log records about rates
+
+- When an [automation rule](/docs/automation) applies a courier service, the log entry includes the **shipping cost** of that service.
+- When rates are fetched again and the rate hasn't changed, **no rate-change entry** is added, so the log only shows real changes.
+
+### Who can see the log
+
+The shipping log — including tracking and change history — is only visible to users of the organization that owns the order. See [Your data and privacy](/docs/getting-started/data-and-privacy).
+
+<Callout>
+  Rules running in **Test mode** don't generate shipping labels — they only write simulation logs. See [How rules work](/docs/automation/how-rules-work#test-mode).
+</Callout>

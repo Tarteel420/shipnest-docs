@@ -1,0 +1,46 @@
+---
+title: What's new
+description: Features and fixes added to ShipNest in the latest release.
+---
+
+A summary of the latest ShipNest release. Follow the links for step-by-step instructions.
+
+## New features
+
+| Feature | What it does | Learn more |
+| --- | --- | --- |
+| **Label downloads** | A new **Label downloads** button in the header lists every label and packing-slip batch from the last 7 days, so you can download a batch again — for example after a download failed. | [Label downloads](/docs/shipments/label-downloads) |
+| **In-app downtime notices** | Planned ShipNest updates are announced with a banner inside ShipNest instead of WhatsApp messages. | [Downtime notices](/docs/getting-started/downtime-notices) |
+| **Temu marketplace** | Temu is now a supported marketplace. | [Connect Temu](/docs/configuration/webstores/temu) |
+| **BTO sync retry** | Orders that failed to sync with BTO are retried automatically, and you can retry them yourself. | [BTO sync](/docs/shipments/bto-sync) |
+| **Walmart order notifications** | Walmart tells ShipNest about orders as they happen, so they appear faster. | [Syncing orders](/docs/shipments/syncing-orders#how-new-orders-arrive) |
+| **Faster order import** | Orders pushed by marketplaces are imported first, with regular polling kept as a back-up. | [Syncing orders](/docs/shipments/syncing-orders#how-new-orders-arrive) |
+| **Keyboard shortcuts** | **Ctrl + X** fetches rates and picks the cheapest service for selected orders; **Ctrl + S** ships them with Shopify. | [Keyboard shortcuts](/docs/account-settings/keyboard-shortcuts) |
+| **AccountWise orders** | AccountWise orders can connect to ShipNest using your organization's IAM login. | — (see note below) |
+
+## Improvements
+
+- **Confirm before cancel or void** — Cancelling an order and voiding labels now ask you to confirm first. See [Cancelling orders](/docs/shipments/cancelling-orders) and [Shipped orders](/docs/shipments/shipped-orders#void-a-label).
+- **Ship with Shopify for non-Shopify orders** — Shipping a non-Shopify order with **Ship with Shopify** now shows a clear message instead of silently skipping it. See [Bulk actions](/docs/shipments/bulk-actions#ship-all-with-shopify).
+- **Batch label downloads** — While a batch of labels or slips is downloading, the button shows a loader and is disabled until it finishes. If a batch download is interrupted, you are brought back to ShipNest. The package label button downloads just that package's label.
+- **Shipping log** — Records the shipping cost when an automation rule applies a courier service, and no longer adds an entry when a re-fetched rate hasn't changed. See [Shipping log](/docs/shipments/shipping-log#what-the-log-records-about-rates).
+- **Large Amazon syncs** — No longer fail on Amazon rate limits or restart from the first page. See [Syncing orders](/docs/shipments/syncing-orders#large-order-volumes-and-marketplace-limits).
+- **Order list pages** — The page number and the orders shown now always stay in sync when you move between pages quickly.
+- **Your data stays separate** — Each organization can only see and change its own data. See [Your data and privacy](/docs/getting-started/data-and-privacy).
+- **Reliability** — Order list and export problems now show a clear error message instead of a general server error.
+
+## Fixes
+
+| Area | Fix |
+| --- | --- |
+| **Best Buy** | Re-shipped orders no longer go back to Unshipped after a sync. |
+| **Walmart** | Orders sync and ship correctly. |
+| **Newegg** | Waits after Newegg's rate limit are capped, and fallback deadlines no longer fall on weekends. |
+| **Shopify** | Address warnings no longer go out of date. **Ship with Shopify** is blocked for non-Shopify orders. |
+| **FedEx** | A failed FedEx address check no longer blocks all FedEx rates. Package sides under 1 inch are no longer sent to FedEx. |
+| **PrintWise** | Keeps printing after the computer has been idle. Printing errors stay until their cause is fixed. |
+| **Labels** | Labels are no longer cut off on the left. |
+
+<Callout type="warn" title="AccountWise orders">
+  AccountWise orders connect to ShipNest using the organization's IAM login and service token. The setup isn't shown in the ShipNest screens available to us, so it isn't covered step by step yet — contact [Support](/docs/support) to connect AccountWise.
+</Callout>

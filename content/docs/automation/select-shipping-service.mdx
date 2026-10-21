@@ -1,0 +1,68 @@
+---
+title: Select shipping service
+description: Choose the carrier account and service for each order automatically.
+---
+
+> *Picks the carrier for each order automatically.*
+
+*Pick the carrier per shipment based on the order's marketplace and optional filters. This rule selects the shipping service only — it never generates labels.*
+
+## Create the rule
+
+<Steps>
+<Step>
+
+### Open and name
+
+Click **Select shipping service**, enter a **Rule name** and optional **Description**, choose **Basic** or **Advanced**, and set **Test mode** if needed.
+
+</Step>
+<Step>
+
+### Add a branch
+
+Under **Step 1: Shipping rules**, click **Add branch**.
+
+<Screenshot src="/images/automation/ar-select-shipping-branch.png" alt="Shipping rule branch" />
+
+</Step>
+<Step>
+
+### Filter (optional)
+
+Add conditions in **IF — Filter (optional)**. *A branch with no filter matches every eligible order.*
+
+</Step>
+<Step>
+
+### Choose how to ship
+
+Under **Then ship via → Shipping**, choose a **Shipping account** (with its ship-from address), a **Courier service**, or both. *At least one is required.* Optionally add a **Tag**.
+
+</Step>
+<Step>
+
+### Add more branches
+
+Click **Add else-if branch** for other scenarios. *The first branch whose filter matches selects the shipping service.*
+
+</Step>
+<Step>
+
+### Set the fallback (optional)
+
+Under **Otherwise**, switch on **Enable** to set a default service. *Applies to orders on any marketplace not matched by a branch above. Disabled by default.*
+
+</Step>
+<Step>
+
+### Save
+
+Check the **Review and save** chips and click **Create rule**.
+
+</Step>
+</Steps>
+
+<Callout title="When it runs">
+  Only for **unshipped, paid, non-canceled** orders, and only when **every package has a weight greater than 0**. It selects the service only — it never buys labels.
+</Callout>

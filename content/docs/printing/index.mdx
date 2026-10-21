@@ -1,0 +1,28 @@
+---
+title: Printing Overview
+description: Desktop printing vs PrintWise cloud printing.
+---
+
+ShipNest can print labels in two ways. Choose one in **Configurations → [Printing template](/docs/configuration/printing-template)** with **Use PrintWise Cloud Printing**.
+
+| | Desktop printing | PrintWise cloud printing |
+| --- | --- | --- |
+| **How it works** | Labels are handled by the desktop application. | Labels are sent from the cloud to the **PrintWise Agent** running on a Windows PC, which prints them on that PC's printers. |
+| **Turn on** | Use PrintWise Cloud Printing **off** | Use PrintWise Cloud Printing **on** |
+| **Set up** | — | [Install the agent](/docs/printing/set-up-printwise-agent), then choose [default printers](/docs/printing/printers). |
+
+## Printing menu
+
+With PrintWise, the **Printing** menu in the sidebar has:
+
+- [Printers](/docs/printing/printers) — choose default PDF and ZPL printers.
+- [Print Jobs](/docs/printing/print-jobs) — follow every label sent to a printer.
+- [Configure Agent](/docs/printing/set-up-printwise-agent) — download and manage PrintWise agents.
+
+## Printer status in the header
+
+The **PDF ● / ZPL ●** chip in the header shows your default printers' status. It turns into a red **Printing Offline** chip when the agent isn't connected.
+
+<Callout type="warn" title="Protect against offline printing">
+  Turn on **Disable actions if agent offline** in the [Printing template](/docs/configuration/printing-template) so labels can't be bought while they can't be printed.
+</Callout>

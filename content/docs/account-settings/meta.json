@@ -1,0 +1,5 @@
+{
+  "title": "Account Settings",
+  "root": true,
+  "pages": ["index", "shipping-and-rates", "address-validation", "picking-and-fulfillment", "keyboard-shortcuts"]
+}

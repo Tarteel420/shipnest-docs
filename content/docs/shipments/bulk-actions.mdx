@@ -1,0 +1,40 @@
+---
+title: Bulk actions
+description: Select many orders and act on them together.
+---
+
+## Select orders
+
+Tick the checkbox at the start of each row, or the checkbox in the header to select every order on the page. Combine this with [filters](/docs/shipments/search-and-filters) to select exactly the orders you need.
+
+## What you can do with a selection
+
+| Action | Where | What it does |
+| --- | --- | --- |
+| **Labels (PDF)** | Toolbar | Downloads the labels of the selected orders. Disabled until orders are selected. |
+| **Orders in CSV / Orders in Excel** | Labels ▾ | Exports order data. See [Slips, labels and exports](/docs/shipments/slips-labels-and-exports). |
+| **Slip Preview** | Toolbar | Generates packing slips for the orders in view. |
+| **Ship all** | Toolbar | Ships the orders shown on the button count. |
+| **Ship all with Shopify** | Ship all ▾ | Buys labels and fulfils the selected (or ready-to-ship) Shopify orders in one step. Shortcut **Ctrl + S**. |
+| **Bulk fetch rates** | Keyboard shortcut **Ctrl + X** | Fetches carrier rates for the selected orders, the same as the account's [Fetch Rates](/docs/automation/fetch-rates) rule. |
+
+<Callout type="warn" title="Check before you ship in bulk">
+  Bulk shipping buys real labels. Orders that are missing required information (see [Needs Attention](/docs/shipments/needs-attention)) must be fixed individually first.
+</Callout>
+
+## Ship all with Shopify
+
+**Ship all with Shopify** only works for **Shopify orders**. Shopify creates these labels itself, so ShipNest can't use Shopify to ship orders from other marketplaces.
+
+- If your selection includes orders from other marketplaces (for example WooCommerce, Walmart or eBay), those orders are **not** shipped with Shopify. ShipNest now shows a clear message that the order is not a Shopify order and can't be shipped with Shopify, instead of skipping it silently.
+- Ship those orders with **Ship all** (or one by one) instead.
+
+<Callout>
+  **Ship with Shopify** on a single order only appears for Shopify orders. See [Connect Shopify](/docs/configuration/webstores/shopify#shopify-only-features).
+</Callout>
+
+## Batches and re-downloads
+
+Each **Ship all**, **Ship all with Shopify** and **Slip Preview** run is saved as a batch for 7 days. If a download fails or is interrupted, download it again from [Label downloads](/docs/shipments/label-downloads).
+
+Keyboard shortcuts can be changed per user. See [Keyboard shortcuts](/docs/account-settings/keyboard-shortcuts).

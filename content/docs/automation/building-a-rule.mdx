@@ -1,0 +1,100 @@
+---
+title: Build a rule step by step
+description: The general workflow for creating any automation rule.
+---
+
+This walkthrough uses the **Order validation** template. The same flow — **Rule details → Filter → Action → Save** — applies to every template, with the differences noted on each template's page.
+
+<Steps>
+<Step>
+
+### Open Automation rules
+
+Go to **Configurations → Automation rules**.
+
+</Step>
+<Step>
+
+### Pick a template
+
+Under **Specific automation rules**, click the template you need (hover a template to see what it does). A panel opens on the right. To build from scratch, click **+ New Rule** instead — see [Custom rules](/docs/automation/custom-rules).
+
+<Screenshot src="/images/automation/ar-order-validation-panel.png" alt="New Order Validation rule panel" />
+
+</Step>
+<Step>
+
+### Name the rule
+
+Enter a **Rule name** (required) and an optional **Description**. Turn on **Test mode** to try the rule without generating labels. See [Test mode](/docs/automation/how-rules-work#test-mode).
+
+</Step>
+<Step>
+
+### Set the conditions (IF)
+
+Under **Filter Conditions**:
+
+1. Choose **AND** (all conditions must match) or **OR** (any condition can match).
+2. Click **Add Filter**, then click the field box to open **Select Field**. Search, or browse by category, and pick a field.
+3. Choose an **Operator** and enter a **Value**. Yes/No fields (such as **PO Box**) show **Yes** / **No** buttons instead.
+4. Click **Add Filter** again for more conditions, or **Add Group** to create a nested group with its own AND/OR.
+
+<Screenshot src="/images/automation/ar-select-field.png" alt="Select Field dialog" caption="Fields are grouped by category. The number shows how many fields this template offers." />
+
+See [Fields and operators](/docs/automation/fields-and-operators) for the full list.
+
+</Step>
+<Step>
+
+### Choose the action (THEN)
+
+Under **Then do**, click **Add Action** and choose an action. Fill in its settings (for example pick the **Tag**), then click the inner **Add Action** button to confirm.
+
+<Screenshot src="/images/automation/ar-action-options.png" alt="Action options" caption="Order validation offers Add tag and Pause automations." />
+
+The available actions depend on the template. See [Actions reference](/docs/automation/actions-reference).
+
+</Step>
+<Step>
+
+### Save the rule
+
+Click **Save Rule** (some templates say **Create rule**). Only the **Rule name** is required — filters and actions are optional.
+
+<Screenshot src="/images/automation/ar-ready-to-save.png" alt="Rule ready to save" caption="A complete rule: PO Box = Yes → Add tag." />
+
+</Step>
+<Step>
+
+### Check the Rules list
+
+The panel closes and the rule appears in the **Rules** list under its category, with its status, number of conditions and type.
+
+<Screenshot src="/images/automation/ar-rule-saved.png" alt="Saved rule in the Rules list" />
+
+</Step>
+</Steps>
+
+## Reuse filters and actions
+
+### Saved filters
+
+Click **Save filter for reuse**, enter a **Filter Name** (for example *High-value FedEx orders*) and an optional description, and click **Save**. Saved filters appear under the inline filter and can be selected on other rules. *The inline filter above and selected saved filters will be combined when this rule runs.*
+
+<Screenshot src="/images/automation/ar-save-filter-modal.png" alt="Save Filter dialog" />
+
+### Saved action sets
+
+Under **Then do**, click **Save actions for reuse**, enter an **Action Set Name** and click **Save**. On other rules, click **Insert** next to a saved set to add its actions.
+
+## Add else-if branches and an otherwise
+
+Templates such as **Order classification**, **DSR rule**, **Make your package**, **Select shipping service** and **+ New Rule** support branches:
+
+- **Add else-if branch** — another *filter + action* pair, checked in order after the first.
+- **Else (otherwise)** — switch on **Enable** to set what happens to orders that matched none of the branches.
+
+<Screenshot src="/images/automation/ar-classification-branches.png" alt="Else-if branch and Else (otherwise)" />
+
+**Order validation**, **Packages Historical Autofill**, **Fetch Rates** and **Fallback Selection** use a single filter and action, without branches.

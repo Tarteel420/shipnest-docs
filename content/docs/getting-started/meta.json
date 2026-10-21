@@ -1,0 +1,18 @@
+{
+  "title": "Getting Started",
+  "root": true,
+  "pages": [
+    "index",
+    "whats-new",
+    "navigating-shipnest",
+    "downtime-notices",
+    "setup-checklist",
+    "---How It Works---",
+    "order-lifecycle",
+    "key-concepts",
+    "---Your Account---",
+    "user-roles",
+    "your-account",
+    "data-and-privacy"
+  ]
+}

@@ -1,0 +1,58 @@
+---
+title: Connect Shopify
+description: Connect a Shopify store using its store name and access token.
+---
+
+## What you need
+
+- Your Shopify **store name** — for example `my-store` or `my-store.myshopify.com`.
+- A Shopify **offline/admin access token** for this store, created in your Shopify admin.
+
+## Connect the store
+
+<Steps>
+<Step>
+
+### Open the Shopify form
+
+Go to **Configurations → Webstore settings**, click **+ New webstore**, then click **Shopify**.
+
+<Screenshot src="/images/configuration/webstore-shopify.png" alt="Shopify configuration form" />
+
+</Step>
+<Step>
+
+### Enter the store name
+
+In **Web store name**, enter the Shopify store name (for example *my-store* or *my-store.myshopify.com*).
+
+</Step>
+<Step>
+
+### Enter the access token
+
+In **Access token**, paste the Shopify offline/admin access token for this store.
+
+</Step>
+<Step>
+
+### Authenticate
+
+Click **Authenticate**. The store appears in your webstore list.
+
+</Step>
+<Step>
+
+### Choose carrier accounts
+
+[Switch on the carrier accounts](/docs/configuration/webstores/managing-webstores#choose-carrier-accounts-for-a-webstore) this store should use.
+
+</Step>
+</Steps>
+
+## Shopify-only features
+
+- **Ship with Shopify** and **Ship all with Shopify** buy labels and fulfil orders through Shopify in one step. They work only for Shopify orders — other orders show a message that they can't be shipped with Shopify. See [Bulk actions](/docs/shipments/bulk-actions#ship-all-with-shopify).
+- Address warnings from Shopify are kept up to date after each sync.
+- **Print Shopify order notes on packing slips** — see [Picking & fulfillment](/docs/account-settings/picking-and-fulfillment).
+- Orders on a **Shopify fulfillment hold** always go to [Needs Attention](/docs/shipments/needs-attention).

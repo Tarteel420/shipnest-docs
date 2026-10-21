@@ -1,0 +1,62 @@
+---
+title: Shipping & rates
+description: Settings that control how rates are quoted and labels are purchased.
+---
+
+Go to **Account settings → Shipping & rates**.
+
+<Screenshot src="/images/account-settings/acct-shipping-rates-1.png" alt="Shipping & rates settings" />
+
+## Needs Attention criteria
+
+Choose which conditions move an order into the [Needs Attention](/docs/shipments/needs-attention) tab:
+
+- Missing weight
+- Missing dimensions
+- Order value over threshold
+- Missing shipping address
+
+Default: none. **Invalid addresses, P.O. Boxes and Shopify fulfillment holds always go to Needs Attention**, whatever you choose here.
+
+## Enable Historical Package Data Prefilling
+
+Saves weight and/or dimensions from previously shipped packages and fills them in on future orders with the same item combination.
+
+Default: **on**. Turning it off doesn't delete the saved data — it only stops it being used for new orders. See also [Packages Historical Autofill](/docs/automation/packages-historical-autofill).
+
+## Require signature on high-value eBay orders
+
+Automatically requires a signature on delivery for eBay orders over the threshold you set. It doesn't change orders that already have a signature set, and applies to new eBay orders going forward. Default: **off**.
+
+## BTO Sync
+
+Shows the **BTO Sync** column on the Shipments dashboard and in Customize Tabs. Syncing itself still requires a BTO configuration for the account. Default: **on**. Orders that fail to sync are retried automatically — see [BTO sync](/docs/shipments/bto-sync).
+
+## Ship by countdown units
+
+Whether the **Ship by** badge on Ready to Ship counts down in **Days** or **Hours**. With Hours, deadlines today and tomorrow count down in hours; anything further out stays in days. Default: **days**.
+
+## Truncate contact fields to carrier limits
+
+When buying a label, shortens first name, last name, company name and phone number to each carrier's maximum length. The original values stay on the order. Default: **off**.
+
+## Skip To Process step
+
+Printed orders go straight to **Shipped** instead of waiting in **To Process** for the first carrier scan. Scanning labels still updates tracking. Applies immediately. Default: **off**.
+
+<Screenshot src="/images/account-settings/acct-shipping-rates-2.png" alt="Truncate contact fields, Skip To Process step and Unused label detection" />
+
+## Unused label detection
+
+Controls when a bought-but-unscanned label is treated as **unused**, and when it's flagged as close to the end of its refund window.
+
+| Setting | Range | Default |
+| --- | --- | --- |
+| **Days without a carrier scan before a label counts as unused** | 1–30 days | 7 |
+| **Warn me when a label is within this many days of its refund window closing** | 1–30 days | 7 |
+
+Set the first value too low and normal carrier delays show up as unused labels; too high and the refund window closes before anything is flagged. Refund windows differ by carrier, so the warning counts against each label's own deadline. These values drive the **Unused Labels** page.
+
+<Callout type="warn">
+  The **Unused Labels** page is only visible to roles with access to it.
+</Callout>

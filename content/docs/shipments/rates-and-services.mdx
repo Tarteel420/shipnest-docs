@@ -1,0 +1,41 @@
+---
+title: Rates and services
+description: Compare live carrier rates and choose a service.
+---
+
+ShipNest fetches live rates from your [carrier accounts](/docs/configuration/carriers) so you can compare price and delivery speed.
+
+## The rates table
+
+On [Order details](/docs/shipments/order-details), the rates table lists one row per available service:
+
+| Column | Shows |
+| --- | --- |
+| **Account** | The carrier account the rate comes from. A red **Late** chip means the service is not expected to arrive in time. |
+| **Service** | The carrier and service, for example *FedEx 2Day® (One Rate)*. |
+| **Transit** | The estimated delivery date. |
+| **Rate** | The price. |
+
+Select the radio button of the service you want. Click **Show More** to see more services.
+
+## Refresh rates
+
+Rates depend on the package. After changing dimensions, weight, package type or address, click the **refresh** icon at the top of the rates table to fetch rates again.
+
+<Callout title="FedEx address checks">
+  If FedEx can't validate the address, you still get FedEx rates — a failed address check no longer blocks all FedEx rates.
+</Callout>
+
+<Callout title="Rates need a weight">
+  Rates can't be fetched while the package weight is 0 or empty.
+</Callout>
+
+## Let automation choose for you
+
+Instead of choosing a service manually, you can let rules do it:
+
+- [Select shipping service](/docs/automation/select-shipping-service) — always use a specific account or service for matching orders.
+- [Fetch Rates](/docs/automation/fetch-rates) — fetch rates and pick the cheapest on-time service automatically.
+- [Fallback Selection](/docs/automation/fallback-selection) — correct orders left on an unwanted or too-expensive service.
+
+You can also fetch rates for many selected orders with the **Bulk fetch rates** [keyboard shortcut](/docs/account-settings/keyboard-shortcuts).

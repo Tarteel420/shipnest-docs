@@ -1,0 +1,39 @@
+---
+title: BTO sync
+description: Keep ShipNest orders in sync with BTO, and retry orders that failed to sync.
+---
+
+If your organization uses **BTO**, ShipNest sends your orders to BTO. The **BTO Sync** column on the [Shipments](/docs/shipments) page shows each order's sync status.
+
+<Callout>
+  The BTO Sync column and the retry option are only shown to organizations that use BTO. You can hide the column in [Shipping & rates](/docs/account-settings/shipping-and-rates#bto-sync).
+</Callout>
+
+## Automatic retries
+
+Sometimes an order can't reach BTO — for example while BTO is down. ShipNest now retries these orders **automatically in the background**. When BTO is available again, the orders sync without anyone having to do anything.
+
+## Retry an order yourself
+
+You can also retry the sync for an order straight away:
+
+<Steps>
+<Step>
+
+### Select the order
+
+On the Shipments page, tick the order (or orders) that didn't sync.
+
+</Step>
+<Step>
+
+### Retry
+
+Choose **Retry BTO sync**. ShipNest sends the order to BTO again and updates the **BTO Sync** column.
+
+</Step>
+</Steps>
+
+<Callout type="warn" title="Not verified in screenshots">
+  The account used to write this guide doesn't use BTO, so the retry option wasn't visible and isn't pictured. If you can't find it, contact [Support](/docs/support).
+</Callout>

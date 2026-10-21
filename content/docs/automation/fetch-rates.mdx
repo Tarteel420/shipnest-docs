@@ -1,0 +1,47 @@
+---
+title: Fetch Rates
+description: Fetch carrier rates automatically and optionally pick the cheapest on-time service.
+---
+
+*Fetches carrier rates for eligible shipments (package weight must be greater than zero). With "Select cheapest & on-time" enabled the cheapest on-time service is chosen automatically; disable it to fetch rates without selecting a service.*
+
+<Screenshot src="/images/automation/ar-fetch-rates.png" alt="Fetch Rates rule" />
+
+## Create the rule
+
+<Steps>
+<Step>
+
+### Open and name
+
+Click **Fetch Rates**, enter a **Rule name** and optional **Description**, and set **Test mode** if needed.
+
+</Step>
+<Step>
+
+### Choose the action mode
+
+Under **Action**, leave **Select cheapest & on-time service** on to choose the service automatically. Turn it off to fetch and store rates without selecting one — *When off, rates are fetched and stored but no shipping service is selected.*
+
+</Step>
+<Step>
+
+### Filter (optional)
+
+*Limit the rule to specific marketplaces or order tags. Leave empty to apply to every eligible order.*
+
+</Step>
+<Step>
+
+### Save
+
+Check **Review and save** and click **Create rule**.
+
+</Step>
+</Steps>
+
+<Callout>
+  Only one Fetch Rates rule is allowed per account. If the template button is greyed out, edit the existing rule from the Rules list.
+</Callout>
+
+**Tip:** Turn **Select cheapest & on-time service** off if you want to make the final choice with a [Fallback Selection](/docs/automation/fallback-selection) rule.

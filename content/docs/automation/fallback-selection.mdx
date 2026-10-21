@@ -1,0 +1,80 @@
+---
+title: Fallback Selection
+description: Correct orders left on an unwanted service or too high a rate.
+---
+
+> *Fixes orders left too expensive or on the wrong service. Can skip services when re-picking.*
+
+*Runs last, after rates have been fetched. Match the orders your earlier rules left on an unwanted service or too high a rate, then re-do the selection — a different package, a different carrier, and/or a fresh rate fetch that skips services you exclude.*
+
+<Screenshot src="/images/automation/ar-fallback-top.png" alt="Fallback Selection — top of panel" />
+
+## Create the rule
+
+<Steps>
+<Step>
+
+### Open and name
+
+Click **Fallback Selection**, enter a **Rule name**, optional **Description** and **Test mode** if needed.
+
+</Step>
+<Step>
+
+### Set the filter
+
+Match on what earlier rules produced — tags, courier service and shipping cost. For example *cost is greater than 20* or *courier service is Ground Economy*.
+
+</Step>
+<Step>
+
+### Package (optional)
+
+Turn on **Apply a different package** to swap the package.
+
+</Step>
+<Step>
+
+### Carrier (optional)
+
+Choose a **Shipping account** and/or **Courier service**, or leave both empty to let the rate fetch decide.
+
+</Step>
+<Step>
+
+### Rates (optional)
+
+Keep **Re-fetch rates** and **Select cheapest & on-time service** on (recommended). Use **Never auto-select these services** to skip services when picking — *excluded services are still rated and stay visible on the shipment, they are just skipped when picking automatically, so the next-cheapest service wins.*
+
+<Screenshot src="/images/automation/ar-fallback-rates.png" alt="Carrier, Rates and Behaviour sections" />
+
+</Step>
+<Step>
+
+### Behaviour
+
+Keep both boxes ticked (recommended):
+
+- **Apply only once per order** — otherwise an order still above your cost threshold would be re-processed and re-rated on every run.
+- **Clear the previous rate and service first** — otherwise a re-fetch keeps the service the order already has.
+
+</Step>
+<Step>
+
+### Reselect courier service (optional)
+
+**Re-pick the courier service** runs on its own: rates are re-fetched and the cheapest matching rate is selected, while the package, carrier and exclusion steps are left alone.
+
+</Step>
+<Step>
+
+### Save
+
+Review the chips (for example *Runs after Fetch Rates*, *Re-fetches rates*, *Once per order*) and click **Create rule**.
+
+</Step>
+</Steps>
+
+<Callout>
+  Use this together with [Fetch Rates](/docs/automation/fetch-rates): Fetch Rates gets the rates, Fallback Selection corrects the orders that ended up on the wrong service or too high a rate.
+</Callout>

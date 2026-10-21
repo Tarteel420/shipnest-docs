@@ -1,0 +1,76 @@
+---
+title: Webstores Overview
+description: Connect the marketplaces your orders come from.
+---
+
+A **webstore** is a connected marketplace account. Once connected and active, its orders sync into the [Shipments](/docs/shipments) page automatically.
+
+Go to **Configurations → Webstore settings**.
+
+<Screenshot src="/images/configuration/webstore-list.png" alt="Webstore Settings list" caption="Your connected webstores, with their Active switch." />
+
+| Column | Meaning |
+| --- | --- |
+| **Service** | The marketplace (logo). |
+| **Name** | The name you gave the webstore. |
+| **Active** | Whether the webstore is syncing. See [Managing webstores](/docs/configuration/webstores/managing-webstores). |
+| **Actions** | **⋮ → Edit**. |
+
+## Supported marketplaces
+
+| Marketplace | How it connects | What you need |
+| --- | --- | --- |
+| [Shopify](/docs/configuration/webstores/shopify) | Store name + access token | Shopify offline/admin access token |
+| [Amazon](/docs/configuration/webstores/amazon) | Sign in to Amazon | Company and contact details |
+| [eBay](/docs/configuration/webstores/ebay) | Sign in to eBay | Your eBay login |
+| [Walmart](/docs/configuration/webstores/walmart) | API credentials | Seller ID, Secret key |
+| [Newegg / Newegg Business](/docs/configuration/webstores/newegg) | API credentials | Seller ID, Secret key, Authentication code / API key |
+| [Best Buy](/docs/configuration/webstores/best-buy) | API key | API key |
+| [WooCommerce](/docs/configuration/webstores/woocommerce) | REST API keys | Consumer key, Consumer secret, Store URL |
+| [Temu](/docs/configuration/webstores/temu) | Sign in to Temu, or access token | Temu seller login or seller access token |
+
+## Add a webstore
+
+<Steps>
+<Step>
+
+### Open New webstore
+
+On **Webstore settings**, click **+ New webstore**. The **Webstore configuration** panel opens.
+
+<Screenshot src="/images/configuration/webstore-new-drawer.png" alt="Webstore configuration panel" />
+
+</Step>
+<Step>
+
+### Choose the marketplace
+
+Click the marketplace's logo. Its configuration form appears below.
+
+</Step>
+<Step>
+
+### Enter the details
+
+Fill in the fields for that marketplace — see its page for exactly what to enter.
+
+</Step>
+<Step>
+
+### Connect
+
+Click **Authenticate** (or **Connect to Amazon** / **Connect to eBay**). ShipNest checks the details and adds the webstore to your list.
+
+</Step>
+<Step>
+
+### Choose carrier accounts
+
+Open the new webstore and switch on the carrier accounts it should use. See [Choose carrier accounts for a webstore](/docs/configuration/webstores/managing-webstores#choose-carrier-accounts-for-a-webstore).
+
+</Step>
+</Steps>
+
+<Callout type="warn" title="You need a marketplace account first">
+  The seller account must already exist on the marketplace before you can connect it. Credentials come from that marketplace's seller or developer portal.
+</Callout>

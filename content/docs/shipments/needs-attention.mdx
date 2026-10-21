@@ -1,0 +1,56 @@
+---
+title: Fixing Needs Attention orders
+description: Why orders end up in Needs Attention and how to fix them.
+---
+
+Orders that can't be shipped yet are moved to the **Needs Attention** tab.
+
+<Screenshot src="/images/shipments/ship-needs-attention.png" alt="Needs Attention tab" caption="A red ⚠ under the date means the order has a problem. Ship and Clone are disabled." />
+
+## Why an order is here
+
+These always send an order to Needs Attention:
+
+- An **invalid address**
+- A **P.O. Box** address
+- A **Shopify fulfillment hold**
+
+Your admin can also choose extra criteria in [Shipping & rates](/docs/account-settings/shipping-and-rates#needs-attention-criteria): **Missing weight**, **Missing dimensions**, **Order value over threshold** and **Missing shipping address**.
+
+## See the exact problem
+
+Hover the red **⚠** under the order date. Examples of messages:
+
+- *First name is required to ship this order.*
+- *Please enter package weight*
+- *No shipping rate is available for this shipment. Please fetch rates and select a service.*
+
+## Fix it
+
+<Steps>
+<Step>
+
+### Open the order
+
+Click the order date / number to open [Order details](/docs/shipments/order-details).
+
+</Step>
+<Step>
+
+### Correct the details
+
+Fill in the missing field (for example the name, address or package weight) and choose a rate. See [Rates and services](/docs/shipments/rates-and-services).
+
+</Step>
+<Step>
+
+### Ship
+
+Click **Update and ship**.
+
+</Step>
+</Steps>
+
+<Callout>
+  You can also use an [Order validation](/docs/automation/order-validation) rule to tag or pause orders that need a person to look at them.
+</Callout>

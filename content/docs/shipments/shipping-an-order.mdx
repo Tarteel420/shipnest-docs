@@ -1,0 +1,65 @@
+---
+title: Ship an order
+description: Create a shipping label and tracking number for an order.
+---
+
+Before you start, make sure you have connected a [carrier account](/docs/configuration/carriers) and a [webstore](/docs/configuration/webstores), and set up [printing](/docs/configuration/printing-template).
+
+## Ship from the Order details page
+
+<Steps>
+<Step>
+
+### Open the order
+
+On [Shipments](/docs/shipments) → **Ready to Ship**, click the order's date / number to open [Order details](/docs/shipments/order-details).
+
+</Step>
+<Step>
+
+### Check the addresses
+
+Confirm the **Ship from** address and the customer's **Ship to** address. Fix anything flagged in red.
+
+</Step>
+<Step>
+
+### Check the package
+
+Enter or confirm the **dimensions**, **Weight** and **Package type**. Add a **Declared value**, **Reference** or **Invoice number** if needed, and set **Signature confirmation** and **Ship date**. See [Packages and items](/docs/shipments/packages-and-items).
+
+</Step>
+<Step>
+
+### Choose a rate
+
+In the rates table, select the service you want. Click the refresh icon to fetch rates again after changing the package. See [Rates and services](/docs/shipments/rates-and-services).
+
+<Screenshot src="/images/shipments/order-details-rates.png" alt="Rates table" caption="Select a rate. A Late chip means the estimated delivery is after the ship-by / delivery date." />
+
+</Step>
+<Step>
+
+### Ship it
+
+Click **Update and ship**. For Shopify orders you can instead click **Ship with Shopify**, which buys the label and fulfils the order through Shopify.
+
+</Step>
+</Steps>
+
+## What happens next
+
+- ShipNest creates the shipment with the carrier and receives a **label** and **tracking number**.
+- The label is printed or downloaded according to your [Printing template](/docs/configuration/printing-template) (PrintWise, desktop printing, or **Only Download PDF**).
+- The order moves to **Shipped** and **To Process**. See [Dashboard tabs](/docs/shipments/dashboard-tabs).
+- The action is recorded in the [Shipping log](/docs/shipments/shipping-log).
+
+<Callout type="warn" title="Update and ship is greyed out?">
+  A red ⚠ appears next to the button while something required is missing — for example a name, address, ZIP code, or a weight of 0. Fill in the fields marked in red and the button becomes available.
+</Callout>
+
+## Ship from the order list
+
+Rows in **Ready to Ship** also have a **Ship** button. The row shows the package, weight and courier service that will be used, so check them before you click it.
+
+To ship many orders at once, see [Bulk actions](/docs/shipments/bulk-actions).

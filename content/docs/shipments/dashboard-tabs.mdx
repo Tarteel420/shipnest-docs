@@ -1,0 +1,36 @@
+---
+title: Dashboard tabs (order statuses)
+description: What each Shipments tab means and when an order appears there.
+---
+
+The tabs across the top of the order table group orders by status. The number on each tab is the count of orders in it.
+
+| Tab | What it contains |
+| --- | --- |
+| **Ready to Ship** | Orders synced from your webstores (or created manually) that are ready to be shipped. |
+| **Needs Attention** | Orders with a problem that must be fixed before shipping. See [Fixing Needs Attention orders](/docs/shipments/needs-attention). |
+| **Partially Shipped** | Orders with more than one shipment where some, but not all, have been shipped. |
+| **Shipped** | Orders with a created shipment, label and tracking number. |
+| **To Process** | Shipped orders whose labels have not yet been scanned on [Scan Labels](/docs/scan-labels) or picked up by the carrier. |
+| **Cancelled** | Cancelled orders. |
+| **Returned** | Orders with a return. See [Returns](/docs/shipments/returns). |
+| **All** | Every order, with an extra **Status** column and **Tracking** column. |
+
+<Screenshot src="/images/shipments/ship-all-tab.png" alt="All tab with Status column" caption="The All tab adds a Status icon (hover for the status name) and a Tracking column." />
+
+## How orders move between tabs
+
+- A new order starts in **Ready to Ship**, or in **Needs Attention** if something is missing or invalid.
+- When you ship it, it moves to **Shipped** and also appears in **To Process**.
+- Scanning the label on [Scan Labels](/docs/scan-labels), or the carrier confirming pickup, removes it from **To Process**. It stays in **Shipped**.
+- Orders with several shipments stay in **Partially Shipped** until every shipment is shipped.
+
+## Tracking status
+
+In the **Tracking** column (Shipped, To Process and All tabs) each shipment shows its tracking number, a **Status** (for example *Label Created*) and the **Shipped on** date. Orders shipped through Shopify Shipping show **Shipped using Shopify**.
+
+Tracking statuses you can filter on: **Delivered**, **In Transit**, **Picked Up**, **Processed** and **Label Created**.
+
+## Show, hide or reorder tabs
+
+You can hide tabs you don't use and change their order. See [Customize the dashboard](/docs/shipments/customize-dashboard#customize-tabs).

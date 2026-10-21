@@ -1,0 +1,24 @@
+{
+  "title": "Automation",
+  "root": true,
+  "pages": [
+    "index",
+    "how-rules-work",
+    "building-a-rule",
+    "managing-rules",
+    "---Rule Templates---",
+    "order-validation",
+    "order-classification",
+    "packages-historical-autofill",
+    "make-your-package",
+    "dsr-rule",
+    "select-shipping-service",
+    "fetch-rates",
+    "fallback-selection",
+    "custom-rules",
+    "---Reference---",
+    "fields-and-operators",
+    "actions-reference",
+    "examples"
+  ]
+}

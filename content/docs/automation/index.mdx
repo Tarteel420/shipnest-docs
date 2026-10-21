@@ -1,0 +1,38 @@
+---
+title: Automation Rules
+description: Let ShipNest check, tag, package and rate orders for you.
+---
+
+**Automation rules** check new orders against conditions you set and, when an order matches, run an action automatically — for example add a tag, pause automation, set a package, choose a carrier service or fetch rates.
+
+Find them under **Configurations → Automation rules**.
+
+<Screenshot src="/images/automation/automation-rules-main.png" alt="Automation Rules page" caption="Templates at the top, your saved rules below." />
+
+## Which template do I need?
+
+| I want to… | Use |
+| --- | --- |
+| Flag or pause orders that don't meet my conditions | [Order validation](/docs/automation/order-validation) |
+| Sort orders into groups with tags | [Order classification](/docs/automation/order-classification) |
+| Fill package size and weight from a SKU's saved packing data | [Packages Historical Autofill](/docs/automation/packages-historical-autofill) |
+| Apply a package (or packages by quantity) to matching orders | [Make your package](/docs/automation/make-your-package) |
+| Set the delivery signature requirement | [DSR rule](/docs/automation/dsr-rule) |
+| Choose the carrier account / service automatically | [Select shipping service](/docs/automation/select-shipping-service) |
+| Fetch rates and pick the cheapest on-time service | [Fetch Rates](/docs/automation/fetch-rates) |
+| Fix orders left on an unwanted service or too high a rate | [Fallback Selection](/docs/automation/fallback-selection) |
+| Build my own logic from scratch | [Custom rules (+ New Rule)](/docs/automation/custom-rules) |
+
+## Before you start
+
+- If a rule will **add a tag**, [create the tag](/docs/configuration/tags) first — rules can only use existing tags.
+- If a rule will use a **custom package** or a specific **shipping account**, set those up first under [Custom packages](/docs/configuration/custom-packages) and [Carriers](/docs/configuration/carriers). Dropdowns that show *No options* mean the item doesn't exist yet.
+
+## Learn more
+
+<Cards>
+  <Card title="How rules work" href="/docs/automation/how-rules-work">Order of execution, statuses and Test mode.</Card>
+  <Card title="Build a rule step by step" href="/docs/automation/building-a-rule">Filters, groups, actions and branches.</Card>
+  <Card title="Manage rules" href="/docs/automation/managing-rules">Enable, edit, duplicate, reorder and archive.</Card>
+  <Card title="Examples" href="/docs/automation/examples">Ready-made ideas you can copy.</Card>
+</Cards>

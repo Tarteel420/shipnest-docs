@@ -1,0 +1,57 @@
+---
+title: Connect Newegg and Newegg Business
+description: Connect Newegg or Newegg Business with API credentials.
+---
+
+Newegg and Newegg Business are separate options in the **Webstore configuration** panel. The only difference is the last field.
+
+<Tabs items={['Newegg', 'Newegg Business']}>
+<Tab value="Newegg">
+
+| Field | Enter |
+| --- | --- |
+| **Web store name** \* | A name to recognise this store. |
+| **Seller id** \* | Your Newegg seller ID. |
+| **Secret key** \* | Your Newegg secret key. |
+| **Authentication code** \* | Your Newegg authentication code. |
+
+</Tab>
+<Tab value="Newegg Business">
+
+| Field | Enter |
+| --- | --- |
+| **Web store name** \* | A name to recognise this store. |
+| **Seller ID** \* | Your Newegg Business seller ID. |
+| **Secret Key** \* | Your secret key. |
+| **API Key** \* | Your Newegg Business API key. |
+
+</Tab>
+</Tabs>
+
+<Steps>
+<Step>
+
+### Open the form
+
+Go to **Configurations → Webstore settings**, click **+ New webstore**, then click **Newegg** or **Newegg Business**.
+
+</Step>
+<Step>
+
+### Enter the details
+
+Fill in the fields above using the credentials from the Newegg seller portal.
+
+</Step>
+<Step>
+
+### Authenticate
+
+Click **Authenticate**, then [switch on the carrier accounts](/docs/configuration/webstores/managing-webstores#choose-carrier-accounts-for-a-webstore) for the store.
+
+</Step>
+</Steps>
+
+## Large order volumes
+
+When Newegg asks ShipNest to slow down, ShipNest waits for a limited time and then continues, so a Newegg sync can't stay paused indefinitely. See [Syncing orders](/docs/shipments/syncing-orders#large-order-volumes-and-marketplace-limits).

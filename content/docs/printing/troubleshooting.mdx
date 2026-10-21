@@ -1,0 +1,34 @@
+---
+title: Printing troubleshooting
+description: Fix common PrintWise printing problems.
+---
+
+<Accordions>
+<Accordion title="A printing error won't go away">
+Printing errors stay on the job until the cause is actually fixed — for example until the agent is back online or the printer is available again. They can't be cleared without fixing the problem. Once the cause is fixed, reprint the label and the error clears through the normal flow.
+</Accordion>
+<Accordion title="Printing stopped after the computer was idle">
+The PrintWise agent now keeps printing after periods of inactivity. If printing still stops, make sure the agent is running (tray icon) and use **Restart** from the tray menu.
+</Accordion>
+<Accordion title="The label was cut off on the left">
+This has been fixed — labels now print in full. If you still see a cut-off label, check the **ZPL / PDF Stock Type** in the [Printing template](/docs/configuration/printing-template) matches your label stock.
+</Accordion>
+<Accordion title="The header shows Printing Offline / jobs fail with 'agent offline'">
+The PrintWise agent on the printing computer isn't connected. Make sure the computer is on, the agent is running (tray icon), and you are signed in. Use **Restart** from the tray menu if needed. Then reprint the label from the shipment.
+</Accordion>
+<Accordion title="The agent won't register">
+Check that the **PrintWise Server URL** shown on Configure Agent is reachable and that you completed the **Sign in with 99-IAM** step.
+</Accordion>
+<Accordion title="Printers are not detected">
+Make sure the printer is installed in Windows and working, then click **Resync** on the agent in Configure Agent.
+</Accordion>
+<Accordion title="Nothing reaches the printer">
+Your firewall must allow outbound HTTPS/WSS connections to the PrintWise server. Check the printer is switched on for the agent and set as the default on the Printers page.
+</Accordion>
+<Accordion title="Where are the agent logs?">
+On Windows: `%LocalAppData%\PrintWise\Agent\`, or right-click the tray icon → **Open logs folder**.
+</Accordion>
+<Accordion title="Windows says 'Windows protected your PC'">
+Click **More info → Run anyway**. The agent isn't code-signed yet, but the file is the one you downloaded from the Configure Agent page.
+</Accordion>
+</Accordions>

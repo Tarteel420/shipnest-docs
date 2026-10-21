@@ -1,0 +1,50 @@
+---
+title: Tags
+description: Create coloured tags to organise and filter orders.
+---
+
+Tags are short coloured labels you attach to orders — for example *High value*, *Gift*, or *PO Box review*. Use them to [filter the Shipments page](/docs/shipments/search-and-filters) and in [automation rules](/docs/automation).
+
+Go to **Configurations → Tags**.
+
+## Create a tag
+
+<Steps>
+<Step>
+
+### Click New Tag
+
+The **New tag** dialog opens.
+
+<Screenshot src="/images/configuration/tags-new-dialog.png" alt="New tag dialog" />
+
+</Step>
+<Step>
+
+### Name and colour
+
+Enter a **Name** (up to 30 characters) and pick a colour. The **Preview** shows how the tag will look.
+
+</Step>
+<Step>
+
+### Create
+
+Click **Create**. You'll see *Tag created* and the tag appears in the list.
+
+<Screenshot src="/images/configuration/tags-list.png" alt="Tags list" />
+
+</Step>
+</Steps>
+
+## Edit or delete a tag
+
+Use the **pencil** (edit) or **trash** (delete) icon on the tag's row.
+
+## Apply tags to orders
+
+Tags are added to orders by automation rules with the **Add tag** action — see [Order validation](/docs/automation/order-validation) and [Order classification](/docs/automation/order-classification). Tagged orders show the tag as a chip in the order list.
+
+<Callout>
+  Create a tag **before** building a rule that uses it — the rule builder only lists existing tags.
+</Callout>

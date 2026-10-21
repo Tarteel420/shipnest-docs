@@ -1,0 +1,30 @@
+{
+  "title": "Shipments",
+  "root": true,
+  "pages": [
+    "index",
+    "dashboard-tabs",
+    "search-and-filters",
+    "filter-sets",
+    "customize-dashboard",
+    "syncing-orders",
+    "bto-sync",
+    "---Shipping Orders---",
+    "order-details",
+    "shipping-an-order",
+    "rates-and-services",
+    "packages-and-items",
+    "multiple-shipments",
+    "new-shipment",
+    "bulk-actions",
+    "slips-labels-and-exports",
+    "label-downloads",
+    "---Problems & After Shipping---",
+    "needs-attention",
+    "shipped-orders",
+    "returns",
+    "cancelling-orders",
+    "cloning-orders",
+    "shipping-log"
+  ]
+}

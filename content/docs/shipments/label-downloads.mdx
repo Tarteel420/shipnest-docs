@@ -1,0 +1,87 @@
+---
+title: Label downloads
+description: Find and download label and packing-slip batches from the last 7 days.
+---
+
+Every time ShipNest produces a PDF of labels or packing slips for several orders, it saves the result as a **label batch**. The **Label downloads** panel lists your batches from the last **7 days**, so you can download a batch again — for example when the original download failed, was interrupted, or the file was lost.
+
+## What is saved
+
+A batch is created for each of these actions:
+
+- [Slip Preview](/docs/shipments/slips-labels-and-exports#packing-slips-for-many-orders-slip-preview)
+- [Ship all](/docs/shipments/bulk-actions)
+- [Ship all with Shopify](/docs/shipments/bulk-actions#ship-all-with-shopify)
+- [Reprinting labels](/docs/shipments/shipped-orders#reprint-a-label)
+
+Each batch is named after the action that created it and numbered in order — for example **Ship all #9** for Ship all, **Shopify #6** for Ship all with Shopify, and **Labels #12** for other label downloads.
+
+## Open the panel
+
+Click the **Label downloads** button (the download arrow) in the header, between the printer status and the settings gear. It is available on every page.
+
+<Screenshot src="/images/shipments/header-label-downloads-button.png" alt="Label downloads button in the header" caption="The Label downloads button sits next to the PDF / ZPL printer status." />
+
+The **Label batches** panel opens on the right. Batches are grouped by day (for example *Yesterday*, *Mon 10/19*), newest first.
+
+<Screenshot src="/images/shipments/label-downloads-panel.png" alt="Label batches panel" caption="Each batch shows its type, number, time and status." />
+
+## Read a batch
+
+| Icon / button | Meaning |
+| --- | --- |
+| Green ✓ | Every label in the batch was produced. |
+| Yellow ⚠ | Some labels were produced and some failed. |
+| Red ⚠ | No labels could be produced. |
+| **Failed (n)** | How many orders failed. |
+| **Download** | Downloads the batch's PDF again. Only shown when the batch has labels to download. |
+
+## See which orders succeeded or failed
+
+<Steps>
+<Step>
+
+### Click the batch
+
+Click the batch name (for example **Labels #10**). Its details open underneath.
+
+</Step>
+<Step>
+
+### Review the summary
+
+You'll see a summary such as *4 succeeded, 71 failed of 75* and the date the batch is **Available until** (7 days after it was created).
+
+<Screenshot src="/images/shipments/label-batch-details.png" alt="Batch details" caption="Batch details list every order with its status, tracking number and failure reason." />
+
+</Step>
+<Step>
+
+### Check each order
+
+The table lists every **Order** with its **Status** (*success*, *failed* or *skipped*), **Tracking** number and **Reason** for a failure (for example *Failed to retrieve labels for order 1766*). Use **Search** to find an order, and the sort menu (**Grid order**, **Order ID A-Z**, **Order ID Z-A**, **Status (failed first)**, **Status (success first)**) to change the order of the list.
+
+</Step>
+</Steps>
+
+## Download a batch again
+
+Click **Download** on the batch. The same PDF is downloaded again — no new labels are bought.
+
+## Retry failed orders
+
+When a batch has failures, click **Failed (n)** to retry the failed items in that batch.
+
+<Callout type="warn">
+  Fix the cause of a failure first — for example a missing address or weight — otherwise the retry fails again. See [Fixing Needs Attention orders](/docs/shipments/needs-attention).
+</Callout>
+
+## While a batch is downloading
+
+- The download button shows a loader and is **disabled** until the PDF is ready, so you can't start the same download twice.
+- If a batch download is interrupted (for example the browser blocks the new tab), you are brought back to ShipNest and the batch stays in **Label downloads**, ready to download again.
+- The label button on a single package downloads **only that package's** label.
+
+<Callout>
+  Batches are kept for **7 days**. After that, reprint individual labels from the order — see [Shipped orders](/docs/shipments/shipped-orders#reprint-a-label).
+</Callout>
